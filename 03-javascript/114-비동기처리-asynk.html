@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const url = 'https://jsonplaceholder.typicode.com/todos/1'
+        // 데이터를 불러오는 함수
+        async function loadData() {
+            let res = await fetch(url);
+            console.log(res);
+            console.log("데이터 로드 완료")
+            let data = await res.json();
+            console.log(data);
+        }
+        loadData();
+
+        console.log("데이터 로딩중....")
+    </script>
+</head>
+
+<body>
+    <h1>async-await</h1>
+    <p>javascript 에서 비동기코드를 작성할때 사용하는 명령어</p>
+    <p>async 함수를 비동기처리로 선언할때 사용하며, 값은 promise를 반환한다</p>
+    <p>await - promise가 처리될때 까지 함수 실행을 일시 중지시키고,
+        promise가 해결되고 나면 그 결과물을 반환한다.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+/* 변수 */
+:root {
+    /* color */
+    --main: #EE3123;
+    --mian-text: #DDDDDD;
+    --support-text: #AAAAAA;
+    --ssupport-text: #707070;
+    --icon: #CCCCCC;
+    --blk-btn: #00000080;
+    --red-btn: #EE312380;
+    --Hblk-btn: #000000;
+    --Hred-btn: #EE3123;
+    /* font */
+    --px12: 0.75em;
+    --px14: 0.875em;
+    --px16: 1em;
+    --px20: 1.25em;
+    --px24: 1.5em;
+    --px28: 1.75em;
+    --px32: 2em;
+    --px40: 2.5em;
+    /* etc */
+    --radius: 1.75em;
+}
+
+/* 페이지 제목 */
+.page-section {
+    background: #222222;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.page-inner {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.page-inner>.page-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+/* 페이지명 */
+.page-wrap>h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* 페이지경로 */
+.page-wrap>.location>span {
+    font-size: 12px;
+    color: #707070;
+}
+
+.page-wrap>.location>span:last-child {
+    color: #DDD;
+    font-weight: 600;
+}
+
+.page-wrap>.location>span>a:hover {
+    text-decoration: underline;
+}
+
+/* ^^^ 돈 땃쥐 더 탑 ^^^ */
+
+/* 아래에 작업 */
+
+/* 제휴 서브 */
+/* =========================
+  제휴 상단 버튼
+========================= */
+
+.benefit-top {
+    margin-bottom: 40px;
+}
+
+.section-header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.section-header>.section-title {
+    font-size: var(--px32);
+    font-weight: 700;
+    margin: 0;
+}
+
+.section-header>.sub-title {
+    font-size: var(--px32);
+    font-weight: 100;
+    margin: 0;
+}
+
+
+.btn-wrap {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.btn {
+    width: auto;
+    padding: 12px 28px;
+    height: 48px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--blk-btn);
+    font-size: var(--px16);
+    color: var(--main-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--Hblk-btn);
+}
+
+.btn.active {
+    background: var(--red-btn);
+    color: #fff;
+}
+
+
+/* =========================
+   BENEFIT (제휴 카드 서브페이지)
+========================= */
+
+.benefit-section {
+    padding: 110px 0 40px;
+}
+
+.benefit-top {
+    margin-bottom: 40px;
+}
+
+.benefit-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* 카드 */
+.benefit-card a {
+    display: block;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #1a1a1a;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.benefit-card a:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+}
+
+
+.card-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 29 / 13;
+    overflow: hidden;
+    background: #000;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 하단 날짜 바 */
+.card-info {
+    position: relative;
+    background: #f3f3f3;
+    padding: 14px 14px;
+}
+
+/* 날짜 박스 그라데이션 */
+.card-info::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10px;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+/* 날짜 텍스트 */
+.card-date {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: var(--px14);
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: var(--px16);
+    font-weight: 600;
+    line-height: 1.4;
+    color: #111;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* SPECIAL-SECTION */
+.special-section {
+    position: relative;
+    overflow: hidden;
+}

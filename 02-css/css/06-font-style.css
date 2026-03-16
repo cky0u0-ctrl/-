@@ -1,0 +1,11 @@
+h1 {
+    font-style: oblique;
+}
+
+address {
+    font-style: normal;
+}
+
+p>em {
+    font-style: normal;
+}

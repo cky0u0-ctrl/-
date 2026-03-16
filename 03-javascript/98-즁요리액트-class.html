@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 사람과 관련 클래스 만들기
+        // 이름, 나이 변수
+        //  안녕하세여~ 저는 이름입니다 나이는 몇살 입니다~ 출력하는 메서드
+
+        function Person(name1, age1) {
+            this.name = name1;
+            this.age = age1;
+
+        }
+
+        Person.prototype.intro = function () {
+            console.log(`안녕하세요 저는 ${this.name}입니다 나이는 ${this.age}살입니다`)
+        }
+
+        let man = new Person("홍길동", 20);
+        man.intro();
+
+        class Person2 {
+            constructor(name1, age1) {
+                this.name = name1;
+                this.age = age1;
+            }
+            intro() {
+                console.log(`안녕 나는 ${this.name}야 올해 ${this.age}야`)
+            }
+        }
+        let man2 = new Person2("김철수", 30);
+        man2.intro();
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>class</h1>
+    <p>es6</p>
+    <p>속성(변수)과 메서드(함수)들의 집합체</p>
+    <pre>
+    class 클래스명 {
+        constructor(매개변수){
+            this.속성변수 = 매개변수값;
+        }
+        메서드명(매개변수){
+            동작 명령어;
+        }
+    }</pre>
+    <p>이전 버전 - 생성자함수+프로토타입</p>
+    <pre>
+    function 클래스명(매개변수){
+        this.속성변수 = 매개변수
+    }
+    클래스명.prototype.메서드명=function(매개변수){
+        동작명령어;
+    }
+
+    </pre>
+</body>
+
+</html>

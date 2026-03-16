@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu-wrap {
+    position: fixed;
+    width: 70%;
+    max-width: 500px;
+    min-width: 280px;
+    height: 100vh;
+    background: #ccc;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+
+}
+
+.mobile-menu-wrap.active {
+    left: 0;
+}
+
+.bgHam a,
+.imgHam a {
+    display: block;
+    width: 24px;
+}
+
+.bgHam a {
+    height: 24px;
+    background-image: url(../images2/ham.svg);
+}
+
+.bgHam a.active {
+    background-image: url(../images2/close.svg);
+}

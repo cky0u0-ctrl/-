@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 400px;
+            border: 2px solid;
+            display: flex;
+        }
+
+        .wrap>div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background: pink;
+            flex-shrink: 1;
+        }
+
+        .box2 {
+            background-color: skyblue;
+            flex-shrink: 2;
+        }
+
+        .box3 {
+            background-color: peachpuff;
+            flex-shrink: 0;
+        }
+
+        /* 뺄게 없는 요소는 0을 주면 자기자리를 줄이지않음
+        1주먄 배분하여 뺌 */
+
+        .box4 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-shrink</h1>
+    <p>부모가 display:flex이고</p>
+    <p>모자라는 부모의 공간을 자식 요소에 어떻게 배분해서 빼줄거냐</p>
+    <p>기본값은 0</p>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+div {
+    background: pink;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+/* 테두리 두께 2px , 선의 종류 실선 , 선의 색상 파랑 */
+.box1 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+
+/* 테두리 두께 5px, dashed 초록 */
+.box2 {
+    border: 5px dashed green;
+}
+
+/* 방향 ~ 오른쪽 10px solid실선  빨강*/
+/* 박스사이즈늘어남 여백준만큼 */
+.box3 {
+    border-right: 10px solid red;
+}
+
+/* outline 10px solid 검정색 */
+/* 얜 박스사이즈가 안넘침 */
+.box4 {
+    outline:
+        10px solid black;
+}
+
+.box5 {
+    border: 10px solid black;
+}
+
+span {
+    border: 5px solid rebeccapurple;
+}

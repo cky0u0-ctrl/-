@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            width: 200px;
+            height: 70px;
+            border: 1px solid;
+            border-radius: 50px;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .btn::before {
+            content: "";
+            /*  비포,애프터는 콘텐트 필수쓸것 */
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            border-radius: 50%;
+            position: absolute;
+            left: -100%;
+            top: 50PX;
+            transform: translateY(-50%);
+            transition: 0.3s;
+        }
+
+        .btn:hover::before {
+            left: 0;
+
+        }
+
+        .btn>span {
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+
+        <span>button</span>
+    </div>
+</body>
+
+</html>

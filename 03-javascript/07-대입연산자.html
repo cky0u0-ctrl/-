@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 = 10;
+        let num2 = 5;
+
+        num1 += num2;
+        // num1 = num1 + num2
+        console.log(num1); // 15
+
+        // 테이블을 저장할 변수 만들기
+        // 한줄에 3칸이고 내용은 1,2,3
+        let myTable = "<table>";
+        myTable += "<tr>";
+        myTable += "<td>1</td>";
+        myTable += "<td>2</td>";
+        myTable += "<td>3</td>";
+        myTable += "</tr>";
+        myTable += "</table>";
+
+        console.log(myTable);
+
+
+        // 문서의 출력하기
+        document.write(myTable);
+
+    </script>
+    <style>
+        table,
+        td {
+            border: 1px solid violet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>대입연산자 . 달력만들때 반드시필요함(보통긁어서사용)</h1>
+    <p> = :오른쪽 내용을 왼쪽에 넣어라</p>
+    <p> += :왼쪽변수 값에 오른쪽 변수값을 더해서 다시 왼쪽변수에 넣어라</p>
+    <p>a += b ==> a = a + b</p>
+    <p> -= : 왼쪽변수 값에 오른쪽 변수값을 빼서 다시 왼쪽변수에 넣어라</p>
+    <p> a -= b ==> a = a - b</p>
+    <p> *= : </p>
+    <p> /= : </p>
+    <p> %= : </p>
+    <hr>
+
+    <table>
+        <tr>
+            <td>11</td>
+            <td>22</td>
+            <td>33</td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+</body>
+
+</html>

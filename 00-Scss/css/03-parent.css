@@ -1,0 +1,13 @@
+#menu li a {
+  display: flex;
+  gap: 20px;
+}
+#menu li a li a {
+  color: blue;
+}
+#menu li a li a.active {
+  color: pink;
+}
+#menu li a li a:hover {
+  background: green;
+}

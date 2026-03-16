@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            // btn1을 태그에서 클릭하면 body의 배경이 변경되도록
+
+            // let
+            let myBody = document.querySelector("body");
+            let btn2 = document.querySelector(".btn2");
+            let btn3 = document.querySelector(".btn3");
+            let btn4 = document.querySelector(".btn4");
+            let btn5 = document.querySelector(".btn5");
+
+            // btn2을 더블 클릭하면 body 배경 초록
+
+            btn2.ondblclick = function () {
+                myBody.style.backgroundColor = "green";
+            }
+
+            // btn3마우스를 다운하면 body 배경 하늘색
+            btn3.onmousedown = () => {
+                myBody.style.background = "skyblue";
+            }
+
+            // btn4 마우스를 다운했다가 떼는 순간 body 배경 #add
+            btn4.addEventListener("mouseup", () => {
+                myBody.style.background = "#ddd";
+            })
+
+            // body에서 마우스가 움직이면 좌표값 출력하기
+            myBody.addEventListener("mousemove", (e) => {
+                // e.이벤트와 관련된 모든 정보를 가지는 매개변수
+                console.log(e);
+                console.log(e.type);
+                // 이벤트대상 e.target 실제 이벤트 대상
+                // e.currentTarget 이벤트 준 대상
+                console.log(e.target, e.currentTarget);
+                // 마우스의 위치값 찾기
+                console.log(e.clientX, e.clientY);
+                let x = e.clientX;
+                let y = e.clientY;
+                document.querySelector(".xPos").textContent = x;
+                document.querySelector(".yPos").textContent = y;
+                // clientX viewport가 기준 scroll이 포함 안됨 - 일반적
+                // pageX 문서 전체가 기준 scroll을 포함 -
+                // screenX 모니터 전체가 기준
+
+
+
+            })
+
+            // 마우스 오른쪽 버튼
+            myBody.addEventListener("contextmenu", (e) => {
+                // 기본 이벤트
+                // a , form submit , reset, 마우스 우측
+                // 기본 이벤트 막기
+                e.preventDefault();
+                alert("마우스 우측버튼 금지!!!");
+            })
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>event</h1>
+    <p>웹에서 발생하는 특정 사건을 의미한다</p>
+    <p>이벤트 주기</p>
+    <pre>
+    1.태그에 직접주기
+    <태그 on이벤트타입="스크립트명령어;"></태그>
+
+    2.선택자로 주기
+    선택자.on이벤트타입 = ()={스크립트 명령어}
+
+    3.리스너 함수로 주기
+    선택자.addEventListner("이벤트타입", ()=>{스크립트 명령어})
+</pre>
+
+    <h2>마우스 이벤트</h2>
+    <p class="btn1"><a href="#" onclick="document.querySelector('body').style.backgroundColor='pink';">click</a></p>
+    <p class="btn2"><a href="#">dbclick</a></p>
+    <p class="btn3"><a href="#">mousedown</a></p>
+    <p class="btn4"><a href="#">mouseup</a></p>
+    <p class="btn5"><a href="#">mousemove</a></p>
+
+    <div class="pos">
+        <span class="xPos"></span>
+        <span class="yPos"></span>
+    </div>
+</body>
+
+</html>

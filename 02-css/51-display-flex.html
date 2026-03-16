@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.wrap{
+    background: pink;
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+
+.wrap>div{
+    width: 100px;
+    border: 1px solid;
+}
+
+.wrap>.box1{
+    height:50px;
+}
+
+.wrap>.box2{
+    height:100px;
+}
+
+.wrap>.box3{
+    height:150px;
+}
+
+.wrap>.box4{
+    height:200px;
+}
+
+.wrap>.box5{
+    height:250px;
+}
+
+    </style>
+</head>
+<body>
+ <h1>display - flex</h1>
+ <p>자식 요소들을 옆으로 붙일때 사용 - 기본</p>   
+<div class="wrap">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+h1 {
+    background-color: yellowgreen;
+    line-height: 100px;
+}
+
+.text {
+    background-color: aquamarine;
+    line-height: 2;
+    /* 숫자가 양수면 들여쓰기, 음수면 내어쓰기 */
+    text-indent: -100px;
+}

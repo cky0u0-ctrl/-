@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 부모클래스 Animal
+        // 속성변수 kind, speed
+        // 메서드 rub() : kind는 속도가 speed입니다
+        class Animal {
+            constructor(kind1, speed1) {
+                this.kind = kind1;
+                this.speed = speed1
+            }
+            run() {
+                console.log(`${this.kind}는 속도가 ${this.speed}입니다`)
+            }
+        }
+
+        // 자식클래스 Bugs
+        // 속성변수 kind, speed 부모인 Animal에서 가져와서 사용하고
+        // legs
+        // 메서드 run() : kind는 다리가 legs이고 속도가 speed 입니다
+        class Bugs extends Animal {
+            constructor(kind2, speed2, legs2) {
+                super(kind2, speed2);
+                this.legs = legs2
+            }
+            run() {
+                console.log(`${this.kind}는 다리가 ${this.legs}개 이고 속도가 ${this.speed} 입니다`)
+            }
+        }
+
+
+
+        // 무당벌레, 1, 6
+        let ladybug = new Bugs("무당벌레", 1, 6);
+        ladybug.run();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

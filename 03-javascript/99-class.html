@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 자동차 클래스 만들기
+        // 변수: 차의 종류(kind), 색상(color), 가격(price)
+        // 메서드(intro) : 올해 베스트 차는, 무슨색 무슨 종류입니다, 가격은 얼마입니다
+        class Car {
+            constructor(kind1, color1, price1) {
+                this.kind = kind1;
+                this.color = color1;
+                this.price = price1;
+            }
+            intro() {
+                console.log(`올해 베스트차는 ${this.color} ${this.kind}입니다 , 
+                가격은${this.price}입니다,
+             `)
+            }
+        }
+
+        // 스포츠카, 빨강, 1억
+        let sports = new Car("sports", "빨강", "1억")
+        sports.intro();
+
+        // suv, 검정, 5천
+        let suv = new Car("suv", "검정", "5천")
+        suv.intro();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

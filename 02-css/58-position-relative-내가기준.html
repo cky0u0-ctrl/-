@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            width: 600px;
+            background: yellowgreen;
+
+        }
+
+        .wrap>div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+        }
+
+        .box1 {
+            background: orange;
+            position: relative;
+            top: 30px;
+            left: 30px;
+            /*  */
+        }
+
+        .box2 {
+            background: darkkhaki;
+            position: relative;
+            /* 나를기준으로 위치를 잡겟다-나중에준 요소 위에올라감.*/
+            bottom: 10px;
+        }
+
+        .box3 {
+            background: hotpink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>position</h1>
+    <p>요소들의 위치를 설명할때 사용, 겹칠 수 있다</p>
+
+    <h2>position:relative</h2>
+
+
+
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+
+</body>
+
+</html>

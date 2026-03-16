@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 선언적함수는 선언을 만나기 전에 미리 호출하여 실행할수 있다
+        // 이를 호이스팅이라고 한다
+        hi();
+        // 1.선언적 함수
+        function hi() {
+            document.write("하이~ 선언적 함수<br>")
+        }
+
+        // hi();
+        // 안녕();
+        // 2.함수표현식
+        // 호이스팅이 불가능(위에다 거슬러 적기x)
+        let 안녕 = function () {
+            document.write("안녕함수야~~~")
+        }
+        안녕();
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>함수</h1>
+    <p>자주 사용되는 프로그램들을 별도로 모아서 선언해 놓은것을 말한다</p>
+
+    <h2>함수의 종류</h2>
+    <h3>선언적함수(명명함수)</h3>
+    <pre>
+fuction 함수이름(){
+    자주 사용되는 실행할 명령어
+}
+
+    </pre>
+    <h3>함수표현식(익명함수)</h3>
+    <pre>
+        let 함수명 = function(){
+            자주 사용되는 실행할 명령어
+        }
+    </pre>
+    <h3>화살표함수</h3>
+
+
+</body>
+
+</html>

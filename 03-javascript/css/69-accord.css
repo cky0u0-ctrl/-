@@ -1,0 +1,46 @@
+.vision-wrap {}
+
+.vision-wrap .inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.vision-list {
+    display: flex;
+    justify-content: space-between;
+    height: 560px;
+    gap: 10px;
+}
+
+.vision-list>div {
+    background: dodgerblue;
+    border-radius: 100px;
+    flex: 0 0 74px;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.vision-list>.active {
+    background: #eee;
+    flex: 0 0 70%
+}
+
+.vision-list>div span {
+    display: block;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 70px;
+}
+
+.vision-list>div a>div {
+    opacity: 0;
+}
+
+.vision-list>.active a>div {
+    opacity: 1;
+}

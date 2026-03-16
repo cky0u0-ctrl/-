@@ -1,0 +1,36 @@
+.menu>li {
+    display: inline;
+    /* 세로 ->가로로 붙어서 나옴 */
+    border: 1px solid hotpink;
+    width: 200px;
+    /* 적용안됨...인라인요소라 너비높이x */
+}
+
+
+
+.span-list>span {
+    border: 1px solid blue;
+    display: block;
+    /* 블럭요소라 그자리 다차지 */
+    width: 200px;
+    height: 50px;
+}
+
+.in-block>li {
+    display: inline-block;
+    /* 두가지장점 다사용 */
+    border: 1px solid;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.table>li {
+    border: 1px solid;
+    display: table-cell;
+    width: 200px;
+    height: 150px;
+    vertical-align: middle;
+    /* table - th, td , img에만 적용할 수 있다
+    다른데는 적용안됨 */
+}

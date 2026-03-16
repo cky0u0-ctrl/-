@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            background: skyblue;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            /* 세줄 같은 크기로 만들기~ */
+        }
+
+
+
+
+        .wrap>div {
+            background: palegreen;
+            border: 1px solid;
+            padding: 20px
+        }
+
+        .grid1 {
+            grid-column: 2;
+            /* 시작위치만 지정 */
+
+        }
+
+        .grid4 {
+            grid-column: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="grid1">1</div>
+        <div class="grid2">2</div>
+        <div class="grid3">3</div>
+        <div class="grid4">4</div>
+        <div class="grid5">5</div>
+        <div class="grid6">6</div>
+
+    </div>
+</body>
+
+</html>

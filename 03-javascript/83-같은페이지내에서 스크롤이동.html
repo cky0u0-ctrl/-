@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <script defer src="./js/83-scrolMove.js"></script>
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .tab-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        section {
+            height: 100vh;
+            padding: 100pxs;
+            font-size: 100px;
+        }
+
+        .section1 {
+            background: salmon;
+        }
+
+        .section2 {
+            background: fuchsia;
+        }
+
+        .section3 {
+            background: greenyellow;
+        }
+
+        .section4 {
+            background: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="tab-list">
+            <li><a href="#">section1</a></li>
+            <li><a href="#">section2</a></li>
+            <li><a href="#">section3</a></li>
+            <li><a href="#">section4</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="section1">
+            <h2 class="title">section1</h2>
+        </section>
+        <section class="section2">
+            <h2 class="title">section2</h2>
+        </section>
+        <section class="section3">
+            <h2 class="title">section3</h2>
+        </section>
+        <section class="section4">
+            <h2 class="title">section4</h2>
+        </section>
+    </main>
+</body>
+
+</html>

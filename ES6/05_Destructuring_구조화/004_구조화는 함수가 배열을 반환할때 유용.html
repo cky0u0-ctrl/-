@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <script>
+      //구조화는 함수가 배열을 반환할 때 유용
+      function calculate(a, b) {
+        const add = a + b;
+        const subtract = a - b;
+        const multiply = a * b;
+        const divide = a / b;
+
+       //리턴해주면 밖에서 const add를 사용할 수 있음
+       // 계산된 결과들을 배열로 묶어서 반환
+        return [add, subtract, multiply, divide];  
+      }
+
+      //calculate 함수의 리턴값을 구조분해하여 변수에 저장
+      const [add, subtract, multiply, divide] = calculate(4, 7);
+
+      document.write("<p>Sum: " + add + "</p>");
+      document.write("<p>Difference " + subtract + "</p>");
+      document.write("<p>Product: " + multiply + "</p>");
+      document.write("<p>Quotient " + divide + "</p>");
+    </script>
+
+  </body>
+</html>

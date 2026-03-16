@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <p id="demo"></p>
+
+    <script>
+      // 구조화 중첩
+      const vehicleOne = {
+        brand: 'Ford',
+        model: 'Mustang',
+        type: 'car',
+        year: 2021, 
+        color: 'red',
+
+        // 중첩된 객체: 등록 정보
+        registration: {
+          city: 'Houston',
+          state: 'Texas',
+          country: 'USA'
+        }
+      }
+
+       //함수에 객체 전달
+      myVehicle(vehicleOne)
+
+      //구조 분해로 중첩된 속성 추출
+      function myVehicle({ model, registration: { state } }) {
+        const message = 'My ' + model + ' is registered in ' + state + '.';
+
+        document.getElementById("demo").innerHTML = message;
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            vertical-align: middle;
+        }
+
+        .box {
+            width: 400px;
+            height: 50px;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,5ea6ff+100 */
+            background: linear-gradient(to right, #febbbb 0%, #fe9090 45%, #5ea6ff 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+        .img-box {
+            width: 300px;
+            border: solid 1px;
+            /* 이미지는 여백있어서 정렬해주기 버티컬 얼라인 */
+            position: relative;
+        }
+
+        .img-box::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+62,000000+99,000000+100&0+30,0.43+100 */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.2) 62%, rgba(0, 0, 0, 0.42) 99%, rgba(0, 0, 0, 0.43) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* 0하면 제일밑에 붙음..? - 부모 릴레이티브주기*/
+
+        }
+
+        .img-box {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- 컬러변환사이트이용 하기 -->
+    <div class="img-box">
+        <img src="./images/imgi_2_202601071737232101010795.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

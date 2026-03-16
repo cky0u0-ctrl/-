@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 함수(숫자) return 숫자*숫자
+
+
+        // 1. 일반함수
+        function sum1(num) {
+            return num * num
+        }
+        let total1 = sum1(5);
+        document.write(total1 + "<br>")
+
+
+        // 2. 함수표현식,선언적함수
+        let sum2 = function (count) {
+            return count * count;
+        }
+
+        let total2 = sum2(3);
+
+        document.write(total2 + "<br>")
+
+        // 3. 화살표함수
+        // let sum3 = num => { return num * num }
+        // 실행할 문장이 하나면 {}생략가능 , return을 생략할 수 있다 :: (가로가 함께 생략됬을경우만)
+        let sum3 = num => num * num;
+        let total3 = sum3(4);
+        document.write(total3 + "<br>")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

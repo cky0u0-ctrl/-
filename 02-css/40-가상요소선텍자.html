@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background: pink;
+        }
+
+        p::before {
+            content: "bofore";
+            font-size: 50px;
+        }
+
+        p::after {
+            content: "end";
+            color: blanchedalmond;
+            font-size: 30px;
+            /* 웹페이지 중요요소아니면 css로 - 구분선 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>가상요소선택자</h1>
+    <p>마크업에 없는 요소를 앞 또는 뒤에 추가할때</p>
+    <div>오늘은 수요일~알람이 우렸는데,,,또 자다 늦을뻔함!!!</div>
+
+</body>
+
+</html>

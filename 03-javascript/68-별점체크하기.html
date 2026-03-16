@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .star-wrap {}
+
+        .stars {
+            display: flex;
+
+        }
+
+        .stars>span {
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-image: url(./images2/star-line.png);
+            background-size: 100%;
+            cursor: pointer;
+        }
+
+        .stars>.active {
+            background-image: url(./images2/star-fill.png);
+        }
+    </style>
+    <script defer src="./js/68-star.js"></script>
+</head>
+
+<body>
+    <div class="star-wrap">
+        <div class="stars">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+        <div class="count">0</div>
+        <div class="reset-count">별점취소</div>
+
+    </div>
+</body>
+
+</html>

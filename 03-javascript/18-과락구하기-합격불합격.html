@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //         3과목 점수 입력받기
+        //         userHtml.userCss, userJavascript
+        // 모든 과목이 40점이상이고, 평균이 60이상이면 합격
+        // 평균이 60이하면 불합격
+        // 평균이 60이상이지만, 과락이 있으면 과락불합격
+
+        let userHtml = prompt("html점수를 입력하세요", "");
+        let userCss = prompt("css 점수를 입력하세요", "");
+        let userJavascript = prompt("javascript 점수를 입력하세요", "");
+        // 합계
+        let total = Number(userHtml) + Number(userHtml) + Number(userJavascript);
+        console.log(total);
+
+        if (total / 3 >= 60) {
+            if (userHtml >= 40 && userCss >= 40 && userJavascript >= 40) {
+                document.write("합격")
+            }
+
+            else {
+                document.write("과락 불합격");
+            }
+        }
+        else { document.write("불합격") };
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

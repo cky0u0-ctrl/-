@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: pink;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            /* '부모기준 위치를 잡겠다'라는 뜻임...= 바디태그 */
+            left: 50%;
+            /*내가 보는 화면 정가운데 주는법-포지션주고 나서 재설정하는방법*/
+            transform: translateX(-50%)
+                /* 내가보는 화면에서 50이동 */
+                /* position된 요소를 정가운데 보내기
+            left50%, tranform:translateX(-50%)
+            변형아님 , 공식임! */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transform - translate - 위치이동</h1>
+
+    <div class="box"></div>
+</body>
+
+</html>

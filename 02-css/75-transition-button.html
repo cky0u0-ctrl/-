@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .more-btn>a {
+            background: hotpink;
+            display: flex;
+            width: 160px;
+            height: 64px;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 50px;
+
+        }
+
+        .more-btn>a>img {
+            width: 12px;
+            transition: 0.5s;
+        }
+
+        .more-btn>a:hover img {
+            transform: rotate(360deg);
+        }
+
+        .more-btn>a .over {
+            /* border: 2px solid; */
+            overflow: hidden;
+        }
+
+        .more-btn>a .over>.text {
+            /* background-color: aqua; */
+            position: relative;
+            transition: 0.5s;
+
+        }
+
+        .more-btn>a .over>.text::after {
+            content: "MORE";
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
+
+        .more-btn>a:hover .over>.text {
+            transform: translateY(-100%);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="more-btn"><a href="">
+            <div class="over">
+                <div class="text">
+                    MORE
+                </div>
+            </div>
+            <img src="./images/legot-plus.png" alt="">
+        </a></div>
+
+</body>
+
+</html>

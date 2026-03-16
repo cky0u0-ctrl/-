@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-box {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 40px;
+            transition: 0.5s;
+
+        }
+
+        .img-box:hover {
+            border-radius: 0;
+
+        }
+
+        .img-box>img {
+            width: 100%;
+            transition: 0.5s;
+        }
+
+
+        .img-box:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transition을 이용한 radius</h1>
+    <div class="img-box">
+        <img src="./images/imgi_39_49cf31ffa68545214e863d772e435e8c.jpg" alt="">
+    </div>
+</body>
+
+</html>

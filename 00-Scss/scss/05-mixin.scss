@@ -1,0 +1,38 @@
+// h1,p의 공통사항 글자크기, 밑줄, 글자두께
+
+// h1글자색 초록
+
+
+
+// p 글자색 하늘색
+
+// h1 {
+//     font-size: 25px;
+//     text-decoration: underline;
+//     font-weight: 500;
+//     color: green;
+// }
+
+// p {
+//     font-size: 25px;
+//     text-decoration: underline;
+//     font-weight: 500;
+//     color: skyblue;
+// }
+
+
+@mixin text-style {
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+h1 {
+    @include text-style();
+    color: grenn;
+}
+
+p {
+    @include text-style();
+    color: skyblue;
+}

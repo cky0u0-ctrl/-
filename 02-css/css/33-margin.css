@@ -1,0 +1,58 @@
+h1 {
+    background: skyblue;
+}
+
+p {
+    background: yellow;
+}
+
+/* 기본적으로 태그에는 마진이있고 . 디아브에는 마진이 없음 */
+
+div {
+    background: pink;
+    border: 1px solid black;
+}
+
+/* 사방으로 50px */
+.box1 {
+    margin: 50px;
+}
+
+/* 위아래 20, 좌우 100 */
+/*마진겹침현상 - 위요소의 아래 마진과 아래 요소의 위 마진이 겹친다 
+큰 값 하나만 적용*/
+.box2 {
+    margin: 20px 100px;
+
+}
+
+/* 위100 왼쪽 오른쪽 50 아래10 */
+
+.box3 {
+    margin: 100px 50px 10px;
+}
+
+/* 위50 오른쪽100 아래쪽50 왼쪽70 */
+.box4 {
+    margin: 50px 100px 50px 70px;
+}
+
+/* box5 왼쪽 100px 오른쪽20px
+위50 아래80 */
+
+.box5 {
+    /* margin-left: 100px; */
+    margin-inline-start: 100px;
+    /* margin-right: 20x; */
+    margin-inline-end: 20px;
+    /* margin-top: 50px; */
+    margin-block-start: 50px;
+    /* margin-bottom: 80px; */
+    margin-block-end: 80px;
+}
+
+/* 인라인은 위아래가 적용안됨(비정상) */
+span {
+    background: green;
+    margin: 50px;
+}

@@ -1,0 +1,145 @@
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+@media screen and (max-width: 1280px) {
+  .inner {
+    padding: 0 1rem;
+  }
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header .inner nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: #292929;
+    width: 70%;
+    height: 100vh;
+  }
+}
+header .inner nav .close-btn {
+  display: none;
+}
+header .inner nav .main-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+header .inner .gnb-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  header .inner .gnb-list {
+    display: none;
+  }
+}
+header .inner .ham-btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header .inner .ham-btn {
+    display: block;
+  }
+}
+.main-slider-wrap {
+  height: 50vw;
+  min-height: 400px;
+  max-height: 760px;
+  background: #009233;
+}
+
+section .title {
+  font-size: 30px;
+}
+section .news-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media screen and (max-width: 480px) {
+  section .news-list {
+    flex-direction: column;
+  }
+}
+section .news-list > div {
+  border: 1px solid black;
+  height: 100px;
+  width: 50%;
+  background-color: dodgerblue;
+}
+@media screen and (max-width: 480px) {
+  section .news-list > div {
+    width: 100%;
+  }
+}
+section .product-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  section .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .product-list {
+    grid-template-columns: 1fr;
+  }
+}
+section .product-list > div {
+  border: 1px solid blue;
+  padding: 20px;
+}
+section .product-list > div.product1 {
+  grid-row: span 2;
+}
+@media screen and (max-width: 768px) {
+  section .product-list > div.product1 {
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .product-list > div.product1 {
+    grid-column: 1/2;
+  }
+}
+section .event-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  section .event-list {
+    flex-wrap: wrap;
+  }
+}
+section .event-list > div {
+  height: 200px;
+  background: skyblue;
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  section .event-list > div {
+    width: calc(50% - 15px);
+    order: 0;
+  }
+}
+section .event-list > div.event2 {
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  section .event-list > div.event2 {
+    order: 1;
+    width: 100%;
+  }
+}

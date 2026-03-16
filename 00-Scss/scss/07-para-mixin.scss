@@ -1,0 +1,35 @@
+// flex
+
+// 양쪽정렬 테두리 2px red li 
+
+// 가운데정렬 5px blue
+@mixin myFlex($jc) {
+    display: flex;
+    justify-content: $jc;
+
+}
+
+@mixin myBorder($width, $color) {
+
+    border: $width solid $color;
+}
+
+.nav {
+    @include myFlex(space-between);
+
+    @include myBorder(2px, red);
+
+    li {}
+}
+
+.main-slider {
+    @include myFlex(center);
+
+
+    @include myBorder(5px, blue);
+
+    li {}
+
+
+
+}

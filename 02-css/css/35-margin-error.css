@@ -1,0 +1,30 @@
+/* 기본브라우저 여백들 없애고 시작해야 , 별표시가 전부선택 */
+* {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background: skyblue;
+}
+
+.inner {
+    max-width: 1200px;
+    background: pink;
+    margin: 0 auto;
+    /* 위아래0 좌우는 자동으로 주세요*/
+}
+
+h1 {
+    background: floralwhite;
+    margin-top: 30px;
+    /* 첫번쨰 요소에 margin-top을
+     주면 조상에 영향을 준다 마진오류현상
+     해결방법 - padding을 주면된다
+     2.float */
+
+
+}

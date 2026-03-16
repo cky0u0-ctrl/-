@@ -1,0 +1,30 @@
+.menu-wrap {
+    max-width: 600px;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+
+    .menu-tab {
+        display: flex;
+        gap: 10px;
+
+        >li {
+            >button {
+                background: #eee;
+                border: none;
+                padding: 5px 20px;
+
+                &.active {
+                    background: #222;
+                    color: #fff;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+/* 선택자 안에 선택자를 쓰는것을 네스팅이라고 한다 */
+/* 부모선택자 &로 선택할 수 있다 */

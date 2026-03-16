@@ -1,0 +1,26 @@
+.ranking-list-wrap .swiper-slide img {
+    padding: 100px;
+}
+
+
+.ranking-list-wrap .swiper-slide {
+    transition: 0.3s;
+}
+
+.ranking-list-wrap .swiper-active {
+    transform: scale(1.2);
+
+
+}
+
+.ranking-list-wrap .swiper-slide-prev {
+    transform: scale(1.2);
+    transform-origin: 100%;
+}
+
+
+
+.ranking-list-wrap .swiper-slide-next {
+    transform: scale(1.2);
+    transform-origin: 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 글자 길이
+        // 특정위치 글자 추출
+        // 있는없는지 위치 체크
+
+        // 이름,전화번호 입력받기
+        // 이름은 대문자로
+        // 전화번호 끝자리 4개를 ****로 표기
+
+        let str = "javascript es6 !!!"
+        // 4번째 글자 순서 0부터
+        document.write(str.charAt(4), "<br>")
+        // start,end end-1번째까지 반환된다
+        document.write(str.substring(4, 10), "<br>")
+        // strat, length
+        document.write(str.substr(4, 6), "<br>");
+        // 특정문자가 있는지 체크 (기기체크시 사용) indexOf("문자")
+        // 있으면 위치, 없으면 -1
+        document.write(str.indexOf("s"), "<br>")
+        document.write(str.indexOf("z"), "<br>");
+        //전부 대문자로
+        document.write(str.toUpperCase(), "<br>");
+        // 문자의 길이
+        document.write(str.length, "<br>");
+        let userName = prompt("당신의 이름을 입력하세요", "예)hong gil dong")
+
+        // 전화번호
+        let userPhone = prompt("당신의 전화번호를 입력하세요", "예)01000000000")
+
+        // 이름 출력
+        document.write(`당신의 이름은 ${userName.toUpperCase()} , <br>`)
+
+        // 전화번호 021112222 => 10 , 010-1111-2222 => 13 01011112222 => 11
+        let tel = userPhone.substr(0, userPhone.length - 4) + "*".repeat(4);
+        document.write(`당신의 전화번호는 ${tel}`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

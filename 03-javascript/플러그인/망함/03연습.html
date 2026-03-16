@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+
+<body>
+    <section class="ranking-list-wrap swiper">
+        <ul class="ranking-list swiper-wrapper">
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-1.jpg" alt="">
+                    <string>1</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-2.jpg" alt="">
+                    <string>2</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-3.jpg" alt="">
+                    <string>3</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-4.jpg" alt="">
+                    <string>4</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-5.jpg" alt="">
+                    <string>5</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-6.jpg" alt="">
+                    <string>6</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-7.jpg" alt="">
+                    <string>7</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-8.jpg" alt="">
+                    <string>8</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-9.jpg" alt="">
+                    <string>9</string>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#">
+                    <img src="./images/rank/rank-10.jpg" alt="">
+                    <string>10</string>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".ranking-list-wrap", {
+            slidesPerView: 5,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 3000
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1280: {
+                    slidesPerView: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

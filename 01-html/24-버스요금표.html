@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table>tr*6>td*8 -->
+    <table>
+        <tr>
+            <td rowspan="2">구분</td>
+            <td rowspan="2">승객유형</td>
+            <td colspan="2">현행</td>
+            <!-- <td></td> -->
+            <td colspan="2">변경</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <!-- <td></td>
+                <td></td> -->
+            <td>교통카드</td>
+            <td>현금</td>
+            <td>교통카드</td>
+            <td>현금</td>
+        </tr>
+        <tr>
+            <td rowspan="3">좌석버스
+            </td>
+            <td>어른</td>
+            <td>1,700</td>
+            <td>1,800</td>
+            <td>2,100</td>
+            <td>2,200</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>청소년</td>
+            <td>1,350</td>
+            <td>1,700</td>
+            <td>1,350</td>
+            <td>1,700</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>어린이</td>
+            <td>1,200</td>
+            <td>1,300</td>
+            <td>무료</td>
+            <td>1,300</td>
+        </tr>
+        <tr>
+            <td rowspan="3">심야버스</td>
+            <td>어른</td>
+            <td>2,100</td>
+            <td>2,200</td>
+            <td>2,500</td>
+            <td>2,600</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>청소년</td>
+            <td>1,550</td>
+            <td>1,900</td>
+            <td>1,550</td>
+            <td>1,900</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>어린이</td>
+            <td>1400</td>
+            <td>1500</td>
+            <td>무료</td>
+            <td>1500</td>
+        </tr>
+    </table>
+
+    <!-- table>tr*2>td{$}*3 -->
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <!-- table>(tr>td{$}*3)+tr>td{$@4}*3 -->
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

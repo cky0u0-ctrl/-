@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 50%;
+            animation-name: circleAni;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes circleAni {
+            from {
+                margin-top: 0;
+            }
+
+            50% {
+                margin-top: 300px;
+                margin-left: 300px;
+
+            }
+
+            to {
+                margin-top: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+
+    </div>
+</body>
+
+</html>

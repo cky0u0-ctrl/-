@@ -1,0 +1,154 @@
+/* pc */
+/* 1.제거하기 */
+.close-btn,
+.ham-btn {
+    display: none;
+}
+
+/* .inner */
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 0 16px;
+}
+
+header {}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+.main-menu {
+    gap: 100px;
+    font-size: 1.25em;
+}
+
+.gnb-list {
+    gap: 10px;
+}
+
+.main-slider-wrap {
+    overflow: hidden;
+}
+
+
+.main-slider-wrap img {
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .title {
+    font-size: 3em;
+    margin-bottom: 1em;
+
+}
+
+.news-list {
+    display: flex;
+    gap: 30px;
+}
+
+.news-list>div {
+    border: 1px solid black;
+    width: 50%;
+    height: 100px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+        "box1 box2 box3"
+        "box1 box4 box5";
+
+}
+
+.product-list>div {
+    border: 1px solid blue;
+    padding: 20px;
+
+}
+
+.product-list>.product1 {
+    /* grid-row:1/3; */
+    grid-row: span 2
+        /* grid-area: box1; */
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.event-list>div {
+    background: skyblue;
+    height: 200px;
+    width: 25%;
+}
+
+.event-list>.event2 {
+    width: 100%;
+}
+
+footer {
+    line-height: 100px;
+    background: #333;
+    color: #fff;
+}
+
+
+/* ipad */
+/* 768~1280 */
+@media screen and (max-width:1280px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /* 1.제거하기 */
+    .gnb-list {
+        display: none;
+    }
+
+    /* 2.보이기 */
+
+    .ham-btn,
+    .close-btn {
+        display: block;
+    }
+
+    /* 3.100% 만들기 */
+
+    nav {
+        display: none;
+    }
+
+    .event-list {
+        flex-wrap: wrap;
+    }
+
+    .event-list>div {
+        order: 0;
+        width: calc(50% - 15px);
+    }
+
+    .event-list>.event2 {
+        order: 1;
+    }
+
+
+}
+
+/* mpbile */
+/* ~768 */

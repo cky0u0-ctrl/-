@@ -1,0 +1,58 @@
+[
+    {
+        "menu": "김밥",
+        "category": "kor"
+    },
+    {
+        "menu": "스시",
+        "category": "jp"
+    },
+    {
+        "menu": "김치볶음밥",
+        "category": "kor"
+    },
+    {
+        "menu": "텐동",
+        "category": "jp"
+    },
+    {
+        "menu": "비빔밥",
+        "category": "kor"
+    },
+    {
+        "menu": "짜장면",
+        "category": "ch"
+    },
+    {
+        "menu": "라면",
+        "category": "kor"
+    },
+    {
+        "menu": "장어덮밥",
+        "category": "jp"
+    },
+    {
+        "menu": "탕수육",
+        "category": "ch"
+    },
+    {
+        "menu": "타코야끼",
+        "category": "jp"
+    },
+    {
+        "menu": "딤섬",
+        "category": "ch"
+    },
+    {
+        "menu": "짬뽕",
+        "category": "ch"
+    },
+    {
+        "menu": "국밥",
+        "category": "kor"
+    },
+    {
+        "menu": "쌀국수",
+        "category": "Vietnam"
+    }
+]

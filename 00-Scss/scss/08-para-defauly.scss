@@ -1,0 +1,18 @@
+// 테두리주기
+
+// box1, box3 2px solid black
+
+// box2, 5px solid green
+
+@mixin my-line($width: 2px, $color: black) {
+    border: $width solid $color;
+}
+
+.box1,
+.box3 {
+    @include my-line();
+}
+
+.box2 {
+    @include my-line(5px, green);
+}

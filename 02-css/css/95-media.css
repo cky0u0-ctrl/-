@@ -1,0 +1,51 @@
+body {
+    background: pink;
+    font-size: 16px;
+}
+
+
+
+.title {
+    font-size: 3em;
+}
+
+.ipad,
+.mobile {
+    display: none;
+}
+
+/* ipad */
+
+@media screen and (max-width:1279px) {
+    body {
+        background: skyblue;
+        font-size: 14px;
+
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .ipad {
+        display: block;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+    body {
+        background: green;
+        font-size: 12px;
+
+
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .ipad {
+        display: none;
+    }
+}

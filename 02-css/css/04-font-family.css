@@ -1,0 +1,16 @@
+/* 최종 시스템 폰트 : serif(꺽어지는 글씨체)
+sans-serif(기본체)
+cursive(필기체)*/
+
+h1 {
+    font-family: "궁서", sreif
+}
+
+.text1 {
+    font-size: 50px;
+    font-family: "pretendard", sans-serif;
+}
+
+.text2 {
+    font-family: "Gravitas One", serif;
+}

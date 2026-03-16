@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 외부데이터 주소
+        const url = "//jsonplaceholder.typicode.com/posts"
+
+        async function loadPosts() {
+            try {
+                console.log("데이터 불러오기 전")
+                let res = await fetch(url)
+                console.log("응답 받음")
+                consolo.log(res)
+                let data = await res.json();
+                console.log(data)
+            }
+            catch (error) {
+                console.log("에러발생", error)
+
+
+            }
+        }
+        loadPosts();
+        console.log("다음작업 실행")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

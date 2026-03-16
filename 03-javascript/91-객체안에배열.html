@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //사람 오브젝트만들기
+        const person = {
+
+
+            name: "홍길동",
+            age: 20,
+            hobbies: ["운동", "코딩!", "영화감상"]
+        }
+
+        document.write(person.hobbies[1] + "<br>")
+
+        person.hobbies.push("영어공부");
+        document.write(person.hobbies[3] + "<br>")
+
+
+        // hobbies
+        person.hobbies.forEach(h => {
+            document.write(`${h}<br>`)
+        })
+
+        // 객체 안에 배열안에 객체넣기
+        const btsTeam = {
+            name: "bts",
+            albums: [
+                { title: "1집", subject: "Danger", content: "직설적인 랩과 파워풀한..." },
+                { title: "2집", subject: "wings", content: "피 땀 눈물..." }
+            ]
+        }
+
+        document.write(btsTeam.albums[0].title)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

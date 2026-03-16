@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 400px;
+            background-color: aquamarine;
+            display: flex;
+        }
+
+        .wrap>div {
+            border: 1px solid;
+            height: 100px;
+            flex: 1;
+            /* 서로 남는 공간 나눠갖음(상위) */
+        }
+
+        .box2 {
+            /* flex: 1; */
+            /* 전부 내땅 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>flex:1</h1>
+    <p>모든 자식요소에 줄경우 1:1:1</p>
+    <p>자식요소 하나에 줄 경우 = 남는 공간을 저눕 차지함</p>
+
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div>
+
+</body>
+
+</html>

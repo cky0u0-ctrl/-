@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .menu-list>li {
+            width: 380px;
+            text-align: center;
+        }
+
+        .menu-list>li .img-box img {
+            width: 80%;
+            transition: 0.8s;
+        }
+
+        .menu-list>li .text-box {
+            background: #eee;
+            padding: 100px 28px 50px;
+            text-align: center;
+            margin-top: -100px;
+            transition-duration: 0.5s;
+        }
+
+        .menu-list>li .text-box h3 {
+            color: #111;
+            font-size: 32px;
+            transition: 0.5s;
+        }
+
+        .menu-list>li .text-box p {
+            color: #b8aaa4;
+            transition: 0.5s;
+        }
+
+        .menu-list>li:hover .img-box img {
+            transform: scale(1.2);
+            /* box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3); */
+
+
+        }
+
+        .menu-list>li:hover .text-box {
+            background: #a57454;
+        }
+
+        .menu-list>li:hover .text-box h3 {
+            color: #fff;
+        }
+
+        .menu-list>li:hover .text-box p {
+            color: #e0d4cf;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-wrap">
+        <ul class="menu-list">
+            <li>
+                <a href="# ">
+                    <div class="img-box">
+                        <img src="./images/29-roll kake.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>저당 딸기 우유 생크림 롤케이크</h3>
+                        <p>Low-Sugar Strawberry Milk Whipped Cream Roll Cake</p>
+                    </div>
+            </li>
+        </ul>
+        </a>
+    </div>
+</body>
+
+</html>

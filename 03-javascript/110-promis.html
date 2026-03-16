@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <h1>promise</h1>
+    <p>자바스크립트의 비동기 처리방식 중 하나</p>
+    <p>작업된 결과물이 성공할수도 있고, 실패할수도 있는 상황을 다룰때 사용</p>
+    <pre>
+        let 변수명 = new Promise ((resolve,reject) => {
+    if(성공){
+        resolve("성공")
+     } else{
+    reject(실패)
+     }
+      })
+      변수명.then(result=>{
+
+       }).catch(error=>{})
+</pre>
+</body>
+
+</html>

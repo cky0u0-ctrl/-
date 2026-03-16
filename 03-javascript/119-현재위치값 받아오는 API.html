@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        navigator.geolocation.getCurrentPosition(success, error);
+        function success(position) {
+            console.log(position);
+            console.log('위도:', position.coords.latitud);
+            console.log("경도:", position.coords.longitude);
+        } function error(position) { }
+    </script>
+</head>
+
+<body>
+    <h1>API(Application programming Interface)</h1>
+    <P>프로그램과 프로그램이 데이터를 주고 받기 위한 규칙</P>
+
+    <h2>navigator.geolocation.getCurrentPosition</h2>
+    <p>현재 위치의 위도,경도 값을 받아올때 사용하는 api</p>
+    <pre>
+        navigator.geolocation.getCurrentPositon(성공했을때, 에러처리, 옵션)
+  function 성공했을때(정보값){
+    정보값.coords.latitude
+    정보값.coords.longitude
+  } function 에러처리(정보값){
+
+  }
+    </pre>
+
+</body>
+
+</html>

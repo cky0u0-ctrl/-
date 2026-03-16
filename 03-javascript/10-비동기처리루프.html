@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>비동기처리 진행</h1>
+    <p>call stack(실행중인함수) -> web API -> CallBack Queue(대기장소?) -> Event Loop</p>
+    <h2>Call Stack</h2>
+    <p>현재 실행중인 작업이 쌓이는곳 , 함수가 호출되면 Call Stack에 쌓이고, 실행 끝나면 Call Stack애서 제거
+        함수 호출이 중첩되면, 마지막에 호출되는 함수가 먼저 실행된다
+    </p>
+
+    <h2>Wep API</h2>
+    <P>브라우저에서 제공하는 API , 동작은 javascript 엔진으로 동작된다.
+        setTimeout, fetch, DOM 이벤트 등을 작업할때 사용된다.
+    </P>
+
+    <h2>Callback Queue</h2>
+    <p>Web API에서 전달한 콜백 함수들이 대기하는 장소를 말한다
+        Event Loop 감시하고 있다가 Call Stack이 비면 Callback Queue에 작업을 옮겨준다
+    </p>
+
+
+    <h2>Event Loop</h2>
+    <p>Call Stack과 Callback Queue를 감시하는 역할을 한다.
+        Call Stack이 비어져 있는지 체크하고, 비어 있으면 Callback Queue에 대기중인
+        작업을 Call Stack으로 이동시켜서 작업할 수 있게하는 역할
+    </p>
+</body>
+
+</html>

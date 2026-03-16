@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.배열복사
+
+        let arr1 = [1, 2, 5];
+        let arr1Copy = [...arr1];
+        document.write(arr1Copy + "<br>");
+
+
+
+        // 2.배열 합치기
+        let arr2 = [10, 20, 30];
+        let arrMerge = [...arr1, ...arr2];
+        document.write(arrMerge + "<br>");
+
+        // 3. 배열에 데이터 추가
+
+
+        // [0,1,2,5,99]
+        let arrAdd = [0, ...arr1, 99];
+        document.write(arrAdd + "<br>");
+
+        // 4.함수에 매개값
+        function sum(x, y, z) {
+            return x + y + z;
+        }
+        let result = sum(...arr1);
+        document.write(`배열합계: ${result}`);
+
+
+
+        // 5.객체 복사
+
+        let obj1 = { a: 1, b: 2 };
+        let obj1Copy = { ...obj1 };
+        console.log(obj1Copy);
+        // 6.객체 합치기
+        let users = { name: "홍길동" };
+        let info = { age: 20, job: "의적" };
+        let userMerge = { ...users, ...info }
+        console.log(userMerge);
+
+        // 7.객체 덮어쓰기
+        let settings = { them: "light", lang: "en" };
+        let newSettings = {
+            ...settings, lang: "ko"
+        }
+        console.log(newSettings)
+
+        // 이전버전 배열에 데이터 추가
+        let number = [11, 22, 33];
+        // [0,11,22,33,100];
+        let newNumber = [0, number[0], number[1], number[2], 100]
+        // es6
+        let newNumber2 = [0, ...number, 100]
+        document.write(newNumber + "<br>")
+        document.write(newNumber2 + "<br>");
+
+        // 객체 이전버전
+        let user1 = {
+            name: "홍길동"
+            , age: 20,
+            hobby: "도적"
+        }
+
+
+        // user1의 모든 데이터를 가져오고 , job 추가
+        let uIdfor1 = {
+            name: user1.name,
+            age: user1.age,
+            hobby: user1.hobby,
+            job: "의사"
+        }
+
+        //es6
+        let uIdfor2 = {
+            ...user1,
+            job: "변호사"
+        }
+
+        console.log(uIdfor1)
+        console.log(uIdfor2)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+/* 1.inner */
+.inner {
+    max-width: 1400px;
+    background-color: rgba(255, 0, 0, 0.2);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* 2.header */
+header {
+    border-bottom: 1px solid #EAEAEA;
+    padding: 30PX 0px;
+}
+
+header>.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 저스티파이 - 양쪽에 붙여서 일렬정렬하는 방법 / 디아브 묶기 확인*/
+}
+
+.header-left {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    /* 갭왜 안생김 */
+}
+
+
+.header-left .main-menu {
+    display: flex;
+}
+
+
+/* 자식아닌데 꺽쇠 넣어서 안됨 */
+.header-left .main-menu>li {
+    padding: 0 24px 0 0;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.header-left .main-menu>li::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: blue
+        /* background: #ccc; */
+}
+
+.header-left .main-menu>li>a {
+    font-weight: 800;
+}
+
+.gnb-list {
+    display: flex;
+    gap: 10px;
+}
+
+/* main */
+
+section {
+    padding: 100px 0 0;
+}
+
+.popular-item-wrap {}
+
+
+.tab-menu-list {
+    display: flex;
+    gap: 10px;
+    margin: 40px 0;
+
+}
+
+.tab-menu-list>li>a {
+    display: block;
+    border: 1px solid #E5E5E5;
+    padding: 0 18px;
+    line-height: 40px;
+    color: #1b1d1c;
+    border-radius: 20px;
+
+}
+
+.tab-menu-list>.active>a {
+    background: #000;
+    color: #fff;
+}
+
+
+.popular-list {
+    display: flex;
+    gap: 20px;
+
+}
+
+.popular-list>li>a {}
+
+.popular-list>li>a {}
+
+.popular-list>li>.img-box {
+    position: relative;
+}
+
+.popular-list>li>.img-box .heart {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 16px;
+    height: 16px;
+    background: red;
+    /* 아마 릴레티브 부모한정 움직임 */
+}
+
+.popular-list>li>.img-box .coupon {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    font-size: 12px;
+    background: #6BCBC0;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+
+
+}
+
+.popular-list>li>.text-box {}
+
+.popular-list>li>.text-box p {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.popular-list>li>.text-box .prise {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.popular-list>li>.text-box p span {
+    display: block;
+    width: 150px;
+    /* !아래 세트 세개는 말줄임표 공식! */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 이게무슨 기능이더라 */
+
+}
+
+/* 주목할 브랜드 소식 */
+.brand-list {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.brand-list>li>a {
+    position: relative;
+    /* 기준점 */
+
+}
+
+
+.brand-list>li>a .img-box {}
+
+.brand-list>li>a .img-box::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+62,000000+99,000000+100&0+30,0.65+100 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 0.64) 40%, rgba(0, 0, 0, 0.4) 40%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+
+.brand-list>li>a .text-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 35px 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* 플렉스다이렉션 - 펼친요소들 위치 조정 (갭가능)*/
+}
+
+.brand-list>li>a>.text-box strong {}
+
+.brand-list>li>a>.text-box h3 {
+    font-size: 40px;
+}
+
+.brand-list>li>a>.text-box p {
+    font-weight: 600;
+}
+
+
+
+
+.coord-list {}
+
+.coord-list>li>div>img {
+    max-width: 548px;
+}
+
+.coord-list>li {
+    display: flex;
+    gap: 40px;
+
+}
+
+.coord-list>li .coord-right {
+    display: flex;
+    flex-direction: column;
+    /* 여기서 방향바뀌어서 저스티파이 양옆이 아니라 위아래로 */
+    justify-content: space-between;
+}
+
+.coord-list>li .coord-right .list-title-box {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.coord-list>li .coord-right .list-title-box strong {}
+
+.coord-list>li .coord-right .list-title-box h3 {
+    font-size: 48px;
+}
+
+.coord-list>li .coord-right .list-title-box p:last-child {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.coord-list>li .coord-right ul {
+    display: flex;
+    gap: 20px;
+}
+
+.coord-list>li .coord-right ul li {
+    width: calc(100% / 3);
+}
+
+.coords0lisr>li .coord-right ul li .text-box {
+    padding-top: 10px;
+}
+
+.coords0lisr>li .coord-right ul li .text-box p {
+
+    margin-bottom: 10px;
+}
+
+.coord-list>li .coord-right ul span {}
+
+.coord-list>li .coord-right .sale {
+    color: #6BCBC0;
+    font-weight: 500;
+}
+
+.coord-list>li .coord-right .sale-price {
+    font-weight: 600;
+}
+
+.coord-list>li .coord-right .price {
+    color: #b1b1b1;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+
+
+
+/* footer */
+footer {
+    border-top: 1px solid #EAEAEA;
+    padding: 30px 0;
+    font-size: 13px;
+}
+
+footer>.inner {
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.footer-left {}
+
+.footer-left address {
+    margin: 40px 0;
+}
+
+/* 기본픽셀 10픽샐 많이 ~ em쓰기위해조정 계산편리 */
+/* /* .util-menu .info-meun-list  */
+.footer-left address div {
+    display: flex;
+}
+
+.footer-left address div>p {
+    margin-right: 10px;
+    line-height: 2;
+    color: #999;
+}
+
+.util-menu {
+    display: flex;
+    font-size: 14px;
+}
+
+.util-menu>li {
+    padding-right: 10px;
+}
+
+.footer-left .copy {
+    font-size: 12px;
+    color: #999;
+    margin: 15px 0 10px;
+}
+
+.footer-left .text {
+    font-size: 12px;
+    color: #999;
+}
+
+/* .footer-right */
+/* .footer-right .info-menu-list */
+/* li : padding-left 10 */
+
+/* 오타나서안보임 */
+.footer-right .info-menu-list {
+    display: flex;
+
+}
+
+.footer-right .info-menu-list>li {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+
+/* .customer-center 오른쪽 정렬
+글자색 #999
+span만 글자 16px #111 */
+
+.customer-center {
+    text-align: right;
+    color: #999;
+    margin-top: 40px;
+}
+
+.customer-center>p>span {
+    font-size: 16px;
+    color: #111;
+    font-weight: 600;
+}
+
+.etc-wrap {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    /* 내일 */
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}
+
+
+.sns-list {
+    display: flex;
+    gap: 10px;
+
+}
+
+.family-site>a {
+    display: block;
+    border: 1px solid #EAEAEA;
+    height: 28px;
+    padding: 0 30px 0 12px;
+    border-radius: 30px;
+    line-height: 28px;
+    background: url(../images/arrow-down.svg) no-repeat 90% center;
+    /* y축 x축 */
+}
+
+.family-site>.family-list {
+    display: none;
+}

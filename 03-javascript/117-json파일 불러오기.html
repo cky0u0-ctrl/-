@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let respond;
+        let data;
+        async function loadData() {
+            try {
+                // user.json 파일 불러오기
+                respond = await fetch("data/user.json");
+                console.log(respond);
+                data = await respond.json();
+                console.log(data);
+                console.log(data.name);
+            }
+            catch (error) {
+
+            }
+        }
+        loadData().then(() => {
+            console.log("respond", respond);
+            console.log("data", data)
+            console.log("이름", data.name)
+        })
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

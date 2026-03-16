@@ -1,0 +1,42 @@
+// .wrap position:releative
+
+// .fixed fixed top:30, right:40
+
+// .absolute absolute bottom:10px left:50
+
+// 각각의 너비 높이 배경색 
+
+@mixin mySize($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+
+}
+
+@mixin myPos($p: absolute, $t: null, $r: null, $b: null, $l: null) {
+    position: $p;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+}
+
+.wrap {
+
+
+    @include mySize(600px, 400px, skyblue);
+
+    @include myPos($p: releative);
+
+    .fixed {
+
+        @include mySize(100px, 100px, hotpink);
+        @include myPos($p: fixed, $t: 40px, $r: 40px);
+    }
+
+    .absolute {
+
+        @include mySize(200px, 200px, yellow);
+        @include myPos($b: 10px, $l: 50px);
+    }
+}

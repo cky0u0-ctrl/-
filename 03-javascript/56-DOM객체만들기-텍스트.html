@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체만들기 텍스트</title>
+    <script>
+        // 프로그램 흐름은 위에서 부터 실행된다
+        // body를 체크하기 전에 body를 선택하면 에러가 뜬다
+        // 문서가 불러지고 나면 스크립트를 실행해라~
+        // window.onload = function(){}
+        // window.addEventListener("load",function(){})
+        // => 페이지가 완전히 다 읽혀진후 실행, style, 이미지까지
+
+        // document.addEventListener("DOMContentLoaded",function(){})
+        // =>이미지 , 스타일을 기다리지 않음, 마크업구조만 체크
+        document.addEventListener("DOMContentLoaded", function () {
+            // 1. 태그생성하기
+            let hTitle = document.createElement("h1");
+            // 2.text 내용물 생성하기
+            let hText = document.createTextNode("dm 객체 생성, 제목");
+            // 3.생성한 태그안에 내용물 넣기
+            hTitle.append(hText);
+            // 4.body안에 h1태그 붙이기
+            document.body.append(hTitle);
+
+
+
+
+        })
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

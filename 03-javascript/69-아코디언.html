@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/69-accord.css">
+
+</head>
+
+<body>
+    <div class="vision-wrap">
+        <div class="inner">
+            <!-- div.vision-list>div.vision*6>a[href="#"]>span{0$}+div{vision$} -->
+            <div class="vision-list">
+                <div class="vision active">
+                    <a href="#">
+                        <span>01</span>
+                        <div>vision1</div>
+                    </a>
+                </div>
+                <div class="vision">
+                    <a href="#">
+                        <span>02</span>
+                        <div>vision2</div>
+                    </a>
+                </div>
+                <div class="vision">
+                    <a href="#">
+                        <span>03</span>
+                        <div>vision3</div>
+                    </a>
+                </div>
+                <div class="vision">
+                    <a href="#">
+                        <span>04</span>
+                        <div>vision4</div>
+                    </a>
+                </div>
+                <div class="vision">
+                    <a href="#">
+                        <span>05</span>
+                        <div>vision5</div>
+                    </a>
+                </div>
+                <div class="vision">
+                    <a href="#">
+                        <span>06</span>
+                        <div>vision6</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let vision = document.querySelectorAll(".vision-list>div");
+
+        vision.forEach((v) => {
+            v.addEventListener("click", () => {
+                vision.forEach(vv => vv.classList.remove("active"))
+                v.classList.add("active");
+
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.tab-wrap {
+    margin: 50px;
+}
+
+.tab-title-list {
+    display: flex;
+    gap: 10px;
+
+}
+
+.tab-title-list>li>a {
+    display: block;
+    padding: 8px 20px;
+    background: #ddd;
+}
+
+.tab-title-list>.active>a {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.tab-content-wrap {}
+
+.tab-content {
+    position: absolute;
+    opacity: 0;
+
+}
+
+.tab-content.active {
+    position: relative;
+    z-index: 100;
+    opacity: 1;
+}

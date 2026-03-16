@@ -1,0 +1,24 @@
+.deco1 {
+    text-decoration-color: tomato;
+
+    text-decoration-style: solid;
+    text-decoration-line: line-through;
+}
+
+.deco2 {
+    text-decoration: underline;
+}
+
+.deco3 {
+    text-decoration-line: underline;
+    text-decoration-color: pink;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 20px;
+    text-decoration-skip: 50px;
+
+}
+
+ul>li>a {
+    text-decoration: none;
+}

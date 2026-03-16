@@ -1,0 +1,178 @@
+/* 공통사항 */
+/* 여백제거 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* li 앞 장식 제거 */
+li {
+    list-style: none;
+}
+
+
+/* a 글자색 밑줄제거 */
+a {
+    /* color: #333; */
+    color: inherit;
+    /* inherit은 부모의 속성을 상속 받겠다 (없으면 밑에 후손태그들 색 변경안됨,,)*/
+    text-decoration: none;
+}
+
+/* img,video 위아래 정렬 */
+/* 이미지와 비디오는 글자와 입력 라인이 달라서 
+위아래 정렬을 맞춰야한다
+baseline만 아니면 됨 */
+img,
+video {
+    vertical-align: middle;
+}
+
+/* 기울기 address, em, i */
+address,
+em,
+i {
+    font-style: normal;
+
+
+}
+
+/* body 글씨체, 글자크기,자간, 줄간격, 글자색 */
+body {
+    font-family: "pretendrd", sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+
+}
+
+.inner {
+
+    max-width: 1600px;
+    background-color: rgba(255, 0, 0, 0.3);
+    margin: 0 auto;
+    /* 마진 띄어씌기로... */
+}
+
+
+/* header */
+
+header {
+    padding: 30px 0;
+}
+
+header>.inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 메인메뉴같은 경우 띄어쓰기로 x (서브에 후손 걸려있어서)
+부모>자식(후손X) 화살표로 지정해야함 */
+.main-menu {
+    display: flex;
+}
+
+.main-menu>li {
+    padding: 0 36px;
+    border: 1px solid blue;
+}
+
+.main-menu>li>a {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 500;
+    /* em , px 계산사이트있음 */
+    padding: 20px 0;
+}
+
+.main-menu>li>:hover>a {
+    color: #8b644e;
+    ;
+}
+
+.main-menu>li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #8b644e;
+    ;
+}
+
+.main-menu>li:hover::after {
+    width: 100%;
+}
+
+.sub-menu {
+    display: none;
+}
+
+
+/* main-slider-wrap */
+.main-slider-wrap {
+    overflow: hidden;
+
+}
+
+/* main */
+
+/* footer */
+footer {
+    background: #f5f4f2;
+    padding: 75px 0;
+}
+
+footer>.inner {
+    max-width: 1280px;
+    display: flex;
+    gap: 90px;
+}
+
+.footer-left {}
+
+/* 자식으로 써도되고 띄어쓰기도 됨 (어차피 부모 > 후손 > 자식순이라) */
+.footer-left .sns-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    border: 1px solid #61443a;
+    border-radius: 50px;
+    padding: 4px;
+
+}
+
+.footer-left .sns-list>li>a {
+    display: block;
+    width: 39px;
+    height: 39px;
+    background: #61443a;
+    border-radius: 50%;
+}
+
+.footer-right {}
+
+.footer-right .francise p {
+    margin-bottom: 16px;
+    display: flex;
+    color: #61443a;
+}
+
+.footer-right .franchise-wrap p strong {
+    width: 208px;
+    display: block;
+}
+
+.footer-right address {
+    margin: 40px 0 10px;
+    line-height: 1.8;
+    /* 줄사이 간격 넓어짐 */
+    color: #86726b
+}
+
+.footer-right .footer-menu-list {
+    /* 앵커태그라 바로적용안됨 - 부모한테 주는걸 상속받아라 태그필요함 (inherit)  */
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    color: #86726b
+}

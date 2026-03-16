@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/icons8-별-16.png">
+
+    <style>
+        .wrap {
+            background: skyblue;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            /* 세줄 같은 크기로 만들기~ */
+
+        }
+
+
+        .wrap>div {
+            background: palegreen;
+            border: 1px solid;
+            padding: 20px
+        }
+
+        /* grid1 전체 줄로 합치기 */
+        .grid1 {
+            /* grid-column: 1/4; */
+            grid-column: span 3;
+        }
+
+        .grid2 {
+            /* grid-row: 2/4; */
+            grid-row: span 2;
+        }
+
+        .grid3 {
+            /* grid-column: 2/4; */
+            grid-column: span 2;
+        }
+
+        .grid6 {
+            /* grid-column: 1/4; */
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>grid </h2>
+    <p>: 칸+줄 합치기</p>
+    <div class="wrap">
+        <div class="grid1">1</div>
+        <div class="grid2">2</div>
+        <div class="grid3">3</div>
+        <div class="grid4">4</div>
+        <div class="grid5">5</div>
+        <div class="grid6">6</div>
+    </div>
+</body>
+
+</html>

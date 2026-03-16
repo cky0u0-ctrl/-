@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inner {
+            max-width: 1600px;
+            background: skyblue;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(250px, auto));
+            gap: 20px;
+        }
+
+
+        .inner>div {
+            border: 1px solid;
+            border-radius: 30px;
+            overflow: hidden;
+
+        }
+
+
+        .inner>div img {
+            width: 100%;
+            vertical-align: middle;
+            transition: 0.2s;
+        }
+
+
+        .inner>div:hover img {
+            transform: scale(1.2);
+
+        }
+
+        .inner>.grid1 {
+            grid-column: span 4;
+            aspect-ratio: 1/0.3;
+            overflow: hidden;
+
+        }
+
+        .inner>.grid1 img {
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .inner>.grid2 {
+            grid-column: span 2;
+        }
+
+        .inner>.grid3 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .inner>.grid6,
+        .inner>.grid7 {
+            grid-column: span 2;
+        }
+    </style>
+
+<body>
+    <div class="inner">
+        <div class="grid1"><img src="./images/imgi_20_heritage_1945-1967_mo.webp" alt=""></div>
+        <div class="grid2"><img src="./images/imgi_8_heritage_1968-1982.webp" alt=""></div>
+        <div class="grid3"><img src="./images/imgi_11_heritage_2004-2009.webp" alt=""></div>
+        <div class="grid4"><img src="./images/imgi_9_heritage_1983-1996.webp" alt=""></div>
+        <div class="grid5"><img src="./images/imgi_10_heritage_1997-2003.webp" alt=""></div>
+        <div class="grid6"><img src="./images/imgi_12_heritage_2010-2015.webp" alt=""></div>
+        <div class="grid7"><img src="./images/imgi_13_heritage_2016-now.webp" alt=""></div>
+    </div>
+</body>
+
+</html>

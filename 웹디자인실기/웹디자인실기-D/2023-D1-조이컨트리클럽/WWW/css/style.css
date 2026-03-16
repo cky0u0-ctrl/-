@@ -1,0 +1,333 @@
+/* 공통 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* li앞 장식제거 */
+li {
+    list-style: none;
+}
+
+/*밑줄제거, 글자색 부모로부터 상속받아서  */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*  */
+address,
+em,
+i {
+    font-style: normal;
+}
+
+img,
+video {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.blind {
+    position: absolute;
+    top: -9999px;
+}
+
+body {
+    font-family: "돋움", sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+.wrap {
+    display: flex;
+
+}
+
+header {
+    background: rgb(250, 220, 230);
+    width: 200px;
+    /* 줄여쓰기 w~100*/
+}
+
+.main-menu {
+
+    margin: 20px 10px;
+}
+
+.main-menu>li>a {
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+    border: 1px solid #999;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+.main-menu>li:hover>a {
+    background-color: rgb(127, 147, 240);
+
+}
+
+.main-menu>li:hover .sub-menu {
+    height: auto;
+}
+
+.sub-menu {
+
+    line-height: 35px;
+    text-indent: 20px;
+    height: 0;
+    overflow: hidden;
+
+
+}
+
+.sub-menu>li>a {}
+
+.sub-menu>li>a:hover {
+    display: block;
+    background: rgb(215, 230, 152);
+}
+
+.gnb-list {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.gnb-list>li>a {
+    display: block;
+
+}
+
+.gnb-list>li:first-child {
+    border-right: 1px solid #a16363;
+    padding-right: 10px;
+    margin-right: 10px;
+
+}
+
+
+main {
+    background: rgb(240, 222, 188);
+    width: calc(100% - 200px);
+    /* 전체페이지 100%중 200뺀 나머지를 씀 - 선택자 부모 / 플렉스1을 줘도 됨! 위에 플렉스사용햇기때문에*/
+}
+
+.main-slider-wrap {
+    height: 400px;
+    overflow: hidden;
+}
+
+.main-slider {}
+
+.main-slider>li>a {
+    display: block;
+    position: relative;
+    height: 400px;
+}
+
+.main-slider>li div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 부모기준임 퍼센트면 */
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 50px 100px;
+}
+
+
+.main-slider>li img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {}
+
+.quick-menu-list {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding: 10px;
+
+}
+
+.quick-menu-list>li>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quick-menu-list>li:nth-child(2) {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin: 10px 0 0;
+    padding: 10px 0;
+}
+
+.quick-meni-list>li>a img {
+    width: 52px;
+}
+
+.banner-wrap {
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    background: palegreen;
+    gap: 20px;
+}
+
+.banner-wrap img {
+    height: 160px;
+
+}
+
+.banner-wrap>.title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.banner-wrap .more-btn {}
+
+.banner-wrap .more-btn>a {
+    display: block;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    position: absolute;
+    right: 50px;
+}
+
+.notice-gallery-wrap {
+    padding: 20px;
+    height: 250px;
+}
+
+.tab-menu-list {
+    display: flex;
+
+}
+
+.tab-menu-list>li>a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 24px;
+    background: #fff;
+
+
+}
+
+.tab-menu-list>.active>a {
+    background-color: cadetblue;
+}
+
+.tab-content-wrap {
+    position: relative;
+    top: 10px;
+}
+
+.tab-content-wrap>div {
+    position: absolute;
+    top: 10px;
+    display: none;
+    width: 100%;
+    line-height: 1.6;
+    padding: 0 30px;
+}
+
+.tab-content-wrap>.active {
+    display: block;
+}
+
+.notice-wrap>li>a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-wrap {
+    display: flex;
+    gap: 20px;
+
+}
+
+.gallery-wrap>li>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gallery-wrap>li>a img {
+    height: 140px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 위아래가운데도 맞추기; */
+    height: 100px;
+
+    /* background: pink;
+    color: #fff; */
+}
+
+.footer-logo {
+    width: 200px;
+
+}
+
+address {}
+
+.sns-list {
+    display: flex;
+
+}
+
+.sns-list>li>a img {
+    width: 48px;
+}
+
+.popup {
+    position: absolute;
+    background: papayawhip;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    display: none;
+}
+
+.popup>.title {
+    margin-bottom: 10px;
+}
+
+.popup>div {
+    margin: 30px;
+    line-height: 2;
+}
+
+.popup>.close-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.popup>.cloes-btn a {
+    background: #fff;
+    padding: 10px 20px;
+    width: 130px;
+    border-radius: 50px;
+    display: block;
+}

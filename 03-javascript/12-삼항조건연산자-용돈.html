@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 차비, 식비, 간식비를 입력받아서
+        // 그 합계가 20000원이 넘어가면 '용돈 관리가 필요합니다'
+        // 그 이하면 '참 잘햇어요'를 출력하기
+
+        let bmw = +prompt('교통비를 입력하세요', '');
+        let lunch = +prompt('점심값을 입력하세요.', '');
+        let drink = +prompt('간식비를 입력하세요', '');
+        let total = bmw + lunch + drink;
+        console.log(total);
+
+        total >= 20000 ? document.write('용돈 관리가 필요합니다') : document.write('참 잘했어요')
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

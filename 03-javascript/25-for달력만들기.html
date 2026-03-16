@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td {
+            border: 1px solid green;
+        }
+
+        #myTable {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section>
+
+        <h2>일정표
+        </h2>
+        <table id="myTable"></table>
+    </section>
+
+    <script>
+        let num = 1;
+        // html 구조에 만들어둔 #myTable을 선택하여 변수에 넣기
+        // let table = document.getElementById("myTable");
+        let table = document.querySelector("#myTable");
+        // 줄을 체크하기 위한
+        for (let i = 1; i <= 5; i++) {
+            let row = table.insertRow();
+            // <tr>생성
+            // 칸을 체크함
+            for (j = 1; j <= 7; j++) {
+                let cell = row.insertCell();
+                // <td>생성
+                cell.textContent = num++;
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

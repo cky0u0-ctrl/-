@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+/* 디자인 기본 css,,,계속사용
+패딩제거할때 사용 명령어 위에 */
+
+
+.gnb-list1>li {
+    display: inline-block;
+    border-right: solid 1px lightseagreen;
+    padding-right: 10px;
+}
+
+.gnb-list2>li {
+    display: inline-block;
+}
+
+/* 엘아이 안에다가 - 콘탠트 필수 */
+.gnb-list2>li::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 5px;
+    background: blue;
+}

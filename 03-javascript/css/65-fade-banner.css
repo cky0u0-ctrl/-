@@ -1,0 +1,59 @@
+.main-slider {
+    height: 500px;
+}
+
+.main-slider-list {
+    height: inherit;
+}
+
+.main-slider-list>li {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.main-slider-list>.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.main-slider-list>li>a {
+    display: block;
+    font-size: 100px;
+    height: inherit;
+
+}
+
+.main-slider-list>li:first-child>a {
+    background: salmon;
+}
+
+.main-slider-list>li:nth-child(2)>a {
+    background: seagreen;
+}
+
+.main-slider-list>li:last-child>a {
+    background: dodgerblue;
+}
+
+.pager {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pager>li {}
+
+.pager>li>a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+}
+
+.pager>.active>a {
+    background: green;
+}

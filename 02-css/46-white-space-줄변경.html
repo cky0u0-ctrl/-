@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: pink;
+            border: 1px solid;
+            width: 300px;
+        }
+
+        /* 줄못바꾸게하는 이게중요 */
+        .norwrap {
+            white-space: nowrap;
+        }
+
+        .pre{white-space: pre;}
+        /* 입력값 그대로 나옴 */
+
+        .pre-wrap{white-space: pre-wrap;}
+        /* 칸맞게 */
+    </style>
+</head>
+
+<body>
+    <h1>white-space</h1>
+    <p>줄바꿈 처리 ~ 줄변경</p>
+    <div>학교종이 땡떙떙 어서 모이자 , 선생님이 우리를 기다리신다</div>
+    <div class="norwrap">학교종이 땡떙떙 어서 모이자 , 선생님이 우리를 기다리신다</div>
+    <div class="pre">학교종이           땡떙떙
+        어서 모이자 ,
+        선생님이            우리를                기다리신다</div>
+    <div class="pre-wrap">학교종이             땡떙떙
+        어서 모이자 ,
+        선생님이            우리를               기다리신다</div>
+        <!-- 띄어쓰기 가능한 방법 ~ css / 태그 -->
+            <pre>학교종이             땡떙떙
+        어서 모이자 ,                   기다리신다</pre>
+</body>
+
+</html>

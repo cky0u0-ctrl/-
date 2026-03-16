@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 색상 배열
+        let colors = ["red", "green", "blue"];
+        // first = red, second = green third=blue
+        // let first = colors[0];
+        // let second=colors[1];
+        let [first, second, third] = colors;
+        document.write(first, second, third + "<br>");
+        // 음식 종류 배열
+        let store = ["과일", "음료수", "빵", "라면", "햄"];
+        // fruits=과일, drink=음료, ham=햄
+        let [fruits, drink, , , ham] = store;
+        document.write(fruits, drink, ham + "<br>");
+        // 첫번째값 fruits2, 세번째 bread,나머지 rest에 넣기
+        let [fruits2, , bread, ...rest] = store;
+        document.write(fruits2, bread, rest + "<br>")
+
+        let number = [10, 20]
+        let [x = 100, y = 200, z = 30] = number;
+        document.write(x, y, z + "<br>")
+
+        // 객체(object)
+        let user = {
+            name: "이나라",
+            age: 22,
+            city: "seoul",
+            hobby: "영화보기"
+        }
+
+        let { name, age, city, uJob = "디자이너" } = user;
+        document.write(name, age, city, uJob);
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>구조 분해 할당</h1>
+    <p>배열이나 오브젝트(객체)의 구조를 분해해서 다시 새로운 변수에 넣기</p>
+</body>
+
+</html>

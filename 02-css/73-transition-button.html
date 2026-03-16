@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .arrow-btn {
+            width: 80px;
+            height: 40px;
+            background: hotpink;
+            border-radius: 40px;
+            display: flex;
+            /* 인라인움직이기..? */
+            justify-content: center;
+            /* 좌우정렬 */
+            align-items: center;
+            /* 위아래정렬 */
+        }
+
+        .arrow-btn img {
+            transition: 0.3s;
+            /* 기본에다 주는 명령어 */
+
+        }
+
+        .arrow-btn:hover img {
+            transform: translateX(10px);
+        }
+
+        .pager-list {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pager-list>li>a {
+            display: block;
+            width: 10;
+            height: 10px;
+            background: #ccc;
+            border-radius: 30px;
+            transition: 0.3;
+            text-indent: 같이날라감..?-99999px;
+        }
+
+        .pager-list>li:hover>a {
+            width: 30px;
+            background: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transition을 이용한 button</h1>
+    <div class="arrow-btn">
+        <img src="./images/legot-arrow.png" alt="">
+    </div>
+
+    <hr>
+    <ul class="pager-list">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+section {
+    width: 600px;
+
+    .list {
+
+        padding: 20px;
+
+        >li {
+            font-size: 40px;
+        }
+    }
+}
+
+//글씨체, 글씨크기, 글자두께,글자 스타일
+p {
+    //     font-size: ;
+    //     font-size: ;
+    //     font-weight: ;
+    //     font-style: ;
+
+
+    font: {
+
+        family: "돋움";
+        size: 30px;
+        weight: "bold";
+        style: italic;
+
+
+    }
+}

@@ -1,0 +1,22 @@
+#menu {
+    li {
+        a {
+            display: flex;
+            gap: 20px;
+
+            li {
+                a {
+                    color: blue;
+
+                    &.active {
+                        color: pink
+                    }
+
+                    &:hover {
+                        background: green;
+                    }
+                }
+            }
+        }
+    }
+}

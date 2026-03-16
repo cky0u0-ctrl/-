@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            gap: 3px;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        /* 필터2번 - 이미지를 흐릿하게 = 숫자가 클수록 더 흐림 +단위는 주로 px 사용 */
+        .filter2 {
+            filter: blur(30px);
+        }
+
+        /* 이미지의 밝기 조절 = 기본 100% 작으면 어둡게, 크면 밝게 */
+        .filter3 {
+            filter: brightness(100%)
+        }
+
+        /* 선명도 조절 100% 크게 선명 */
+        .filter4 {
+            filter: contrast(100%);
+        }
+
+        /* 채도제거 - 흑백만들기 0~100% */
+        .filter5 {
+            filter: grayscale(100%);
+        }
+
+        /* 반전 */
+        .filter6 {
+            filter: invert();
+        }
+
+        /* 채도 0 채도없음 100% 기본 */
+        .filter7 {
+            filter: saturate(200%);
+
+        }
+
+        /* 세파아톤 */
+        .filter8 {
+            /* filter: opecity(0.5) */
+            filter: sepia(100%);
+        }
+
+        /* 세피아 불러 */
+        .filter9 {
+            filter: sepia() blur(10px)
+        }
+
+        .filter10 {
+            filter
+        }
+    </style>
+</head>
+
+<body>
+    <h1>filter</h1>
+    <p class="filter1"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter2"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter3"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter4"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter5"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter6"><img src=".\images\animation-81-css-mega.jpgg" alt=""></p>
+    <p class="filter7"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter8"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter9"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+    <p class="filter10"><img src=".\images\animation-81-css-mega.jpg" alt=""></p>
+
+
+</body>
+
+</html>

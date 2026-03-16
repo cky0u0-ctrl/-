@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num1 = 10, num2 = 5, num3 = 3;
+        let text = true;
+        console.log(text);
+        console.log(!text)
+
+        //논리곱 &&(and)
+        // 모든 조건이 참일때만 참
+        // 조건중 하나라도 거짓이면 거짓
+        console.log(num1 < num2 && num1 < num3);// false && false false
+        console.log(num1 < num2 && num1.num3);// false && true false
+        console.log(num1 > num2 && num1 < num3);// true && false false
+        console.log(num1 > num2 && num1 > 3);// true && true true
+
+
+        // 논리합 ||(or)
+        // 조건중 하나라도 참이면 참
+        console.log(num1 < num2 || num1 < num3);// false || false fasle
+        console.log(num1 < num2 || num1 > num3);  // false || true true
+        console.log(num1 > num2 || num1 < num3);  // true || false true
+        console.log(num1 > num2 || num1 > num3);  // true || true true
+    </script>
+</head>
+
+<body>
+    <h1>논리연산자</h1>
+    <p> 두개 이상의 논리식을 조합하여 하나의 결과를 결정할때</p>
+    <p>and(&&), or(||), not(!)</p>
+    <p>and는 모든 조건이 참일때만 참</p>
+    <p>or 여러개의 조건중 한개만 참이면 참</p>
+    <p>not 현 상태를 반대로 만들기</p>
+
+
+</body>
+
+</html>

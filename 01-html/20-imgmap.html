@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지맵</title>
+</head>
+
+<body>
+    <h1>이미지맵</h1>
+    <p>하나의 이미지에 여러개의 링크를 줄때 사용</p>
+    <p>영역 - 사각, 원형, 다각형</p>
+    <img src="./images/seoulmap.jpg" alt="서울지도" usemap="#mymap">
+    <map name="mymap">
+        <area shape="rect" coords="351,325,119,57" href="https://www.yongsan.go.kr/portal/main/main.do" alt="용산구청">
+        <area shape="circle" coords="" href="https://www.ep.go.kr/www/index.do?uxuiMain=2025" alt="은평구청">
+        <area shape="poly" coorde="" href="https://www.sdm.go.kr/index.do" alt="서대문구청">
+    </map>
+
+</body>
+
+</html>

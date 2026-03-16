@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            border: 1px solid;
+            position: relative;
+        }
+
+        .wrap>div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            background: pink;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 10;
+        }
+
+        .box2 {
+            background: bisque;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 100;
+            /* 보통 10 100 1000으로 순서줘서 오타율줄임 */
+        }
+
+        .box3 {
+            background: palevioletred;
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>z-index</h1>
+    <p>position의 준 요소의 겹침 순서를 위 아래 순서 변경할때</p>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+
+</body>
+
+</html>

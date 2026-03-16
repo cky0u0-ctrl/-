@@ -1,0 +1,68 @@
+body {
+    font-family: "Noto Sans kr", sans-serif;
+    font-size: 16px;
+    color: #1d1d1d;
+    line-height: 1;
+}
+
+/* h2 글자 크기를 48px - 기본의 3배 */
+/* h3글자크기를 32px - 기본의2배, 글자색#333 */
+
+/* .slogan 글자 크기 24px - 기본의 1.5배,
+strong 글자색 #3463d9
+span 글자 두께 700 */
+
+/* .text 글자색 #222
+.text1 줄간격을 2배, 영문자는 전부 대문자로 */
+
+/* .text2 둘여쓰기 50px, 자간5px */
+
+/* .text3 기울기, 밑줄 */
+
+h2 {
+    font-size: 3em;
+    /* rem도됨  */
+}
+
+h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.slogan {
+    font-size: 1.5em
+}
+
+/* .slogan>strong
+실제로는 디아븨 갯수가많아짐, 이름따라서 꺽쇠자식 */
+div>strong {
+    color: #3463d9;
+}
+
+div>span {
+    font-weight: 700;
+}
+
+.text {
+    color: #222;
+}
+
+/* 클래스 띄어쓰기 연달아쓰면 다른뜻됨 */
+.text1 {
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.text2 {
+    letter-spacing: 5px
+}
+
+.text2 {
+    text-indent: +50px
+}
+
+.text3 {
+    text-decoration: underline;
+    font-style: oblique;
+
+}

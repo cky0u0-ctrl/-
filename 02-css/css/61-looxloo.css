@@ -1,0 +1,77 @@
+/* 공통사항 */
+/* 여백제거 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* li장식제거 */
+.tab-menu-list>li {
+    list-style: none;
+}
+
+/* a 밑줄제거, 글자색 상속 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* img 위아래 정렬 */
+img {
+    vertical-align: middle;
+}
+
+/* .inner 최대너비 1600, 가운데 정렬 */
+
+.inner {
+    max-width: 1400px;
+    background-color: rgba(255, 0, 0, 0.2);
+    margin: 0 auto;
+
+}
+
+/* .title 글자 크기 32px */
+.title {
+    font-size: 32px;
+}
+
+/* .tab-meni-list 옆으로붙이기, 간격10px */
+/* .tab-meni-list>li>a 안쪽여백 10 18px 글자색 #888 */
+.tab-menu-list {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.tab-menu-list>li>a {
+    display: block;
+    border: 1px solid #888;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+
+/* .brand-wrap 위쪽 여백 40px */
+.brand-wrap {}
+
+.brand-item {
+    width: 20%;
+}
+
+.brand-item>.img-box {
+    border: 1px solid;
+    position: relative;
+}
+
+.brand-item>.img-box img {
+    max-width: 100%;
+}
+
+
+.brand-item>.img-box .heart-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.brand-item>.img-box>a {}

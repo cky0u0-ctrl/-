@@ -1,0 +1,57 @@
+div {
+    width: 300px;
+    height: 150px;
+    background: pink;
+    margin: 10px;
+}
+
+/* 사방으로 모서리 둥글기 20px */
+.box1 {
+    border-radius: 20px;
+}
+
+/* 위왼쪽 10px 위오른쪽 50px
+아래 아래오른쪽10px 왼쪽 50px */
+.box2 {
+    border-radius: 10px 50px;
+}
+
+/* 왼쪽위 0 오른쪽위,왼쪽아래 50 
+오른쪽아래 10*/
+/* start 위 왼쪽
+end 아래 오른쪽 
+위아래를 먼저 - 좌우나중에
+border-위아래-좌우-radius: 값 */
+.box3 {
+    /* border-radius: 0 50px 10px; */
+    border-end-start-radius: 50px;
+    border-end-end-radius: 10px;
+}
+
+
+/* 위왼쪽30px 위오른쪽0 
+아래오른쪽50px 아래왼쪽 10px */
+.box4 {
+    /* border-radius: 30px 0 50px 10px; */
+    border-top-left-radius: 30px;
+    /* 위에껀 일일히 쓰는방식 번거롭 */
+    border-end-end-radius: 50px;
+    border-end-start-radius: 10px;
+}
+
+/* 위오른쪽 50px */
+.box5 {
+    border-top-right-radius: 50px;
+}
+
+/* 아래 왼쪽 10px */
+.box6 {
+    border-bottom-left-radius: 10px;
+}
+
+/* 가로/세로 를 다르게 줄때
+가로값 (먼저) 슬래시 세로값
+가로10px/세로56px */
+.box7 {
+    border-radius: 10px/60px;
+}

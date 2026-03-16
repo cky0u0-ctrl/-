@@ -1,0 +1,13 @@
+[
+    {"menu":"김밥","category":"kor"},
+    {"menu":"스시","category":"jap"},
+    {"menu":"비빕밥","cateogry":"kor"},
+    {"menu":"짜장면","category":"ch"},
+    {"menu":"라면","category":"kor"},
+    {"menu":"장어덮밥","category":"jap"},
+    {"menu":"분식","category":"kor"},
+    {"menu":"딤섬","category":"ch"},
+    {"menu":"타코야끼","category":"jap"},
+    {"menu":"짬뽕","category":"ch"},
+    {"menu":"쌀국수","category":"vietnam"}
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 300px;
+            border: 2px solid;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+        }
+
+        .wrap>div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid burlywood;
+            /* 102가되버려서 두개만 들어가는 현상 */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-wrap</h1>
+    <p>넘쳐나는 자식들을 줄변경</p>
+    <h1>flex-direction</h1>
+    <p>자식요소의 붙는 방향을 변경할때</p>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+    </div>
+</body>
+
+</html>

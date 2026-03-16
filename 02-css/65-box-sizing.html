@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: pink;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box2 {
+            border: 10px solid;
+            padding: 20px;
+        }
+
+        /* 10+20+패딩 총너비 늘어나는 공식 */
+
+        .box3 {
+            border: 10px solid;
+            padding: 20px;
+            /* 늘어나는 조건없이 처음햇던 100픽셀로 돌아가고싶을때 박스사이징이용하면됨 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box-sizing</h1>
+    <p>블럭요소의 크기, 너비, 패딩 ,border를 합친것</p>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+
+
+</body>
+
+</html>

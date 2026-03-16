@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 오늘의 날짜를 구하는 함수
+        function myDigit() {
+            let today = new Date();
+            // 시간
+            let hours = today.getHours();
+            // 분
+            let m = today.getMinutes();
+            // 초
+            let s = today.getSeconds();
+            console.log(hours, m, s);
+
+            let digit = document.querySelector(".myClock");
+            // 1.append 기존자료 뒤에 추가
+            // digit.append(`${hours} : ${m} : ${s}`)
+            // 2.innerHTML
+            // digit.innerHTML = `${hours} : ${m} : ${s}`;
+            // 3.textContent
+            digit.textContent = `${hours}: ${m}: ${s}`
+        }
+        document.addEventListener("DOMContentLoaded", myDigit);
+        setInterval(myDigit, 1000);
+
+    </script>
+</head>
+
+<body>
+    <div class="myClock"></div>
+
+</body>
+
+</html>

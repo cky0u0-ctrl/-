@@ -1,0 +1,9 @@
+/* h1의 글자색을 핫핑크 */
+h1 {
+    color: hotpink;
+}
+
+/* p의 글자색은 회색 */
+p {
+    color: gray;
+}

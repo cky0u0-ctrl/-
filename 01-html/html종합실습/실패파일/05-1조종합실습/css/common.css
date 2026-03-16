@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+video {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+.blind {
+    position: absolute;
+    top: -9999px;
+
+}
+
+body {
+
+    font-family: "prerendard", sans-serif;
+}

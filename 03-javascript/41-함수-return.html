@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 변수
+        // 전역변수, 지역변수
+        // 전역변수 : 모든 영역에서 사용되는 변수
+        // 지역변수 : 특정 함수내에서만 사용되는 변수, for에서 사용되는 변수
+        //   ㄴ  let j = 0;
+        //     for (let i = 0; i <= 10; i++) {}
+        //     for (i = 10; i >= 1; i--) { }
+
+
+
+        // 두수를 매개값으로 받아서 합을 구하는 함수
+        // let total;
+        function sum(a, b) {
+            // 합계를 저장할 변수
+            let total = a + b;
+            return total;
+        }
+
+        let total = sum(10, 5);
+        document.write(total);
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

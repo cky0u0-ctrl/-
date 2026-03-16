@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 비와 관련된 배열
+
+        const rains = ["우산", "장화", "무지개", "우비"];
+
+        // 과일의 종류 배열
+        const fruits = ["사과", "배", "포도", "귤"];
+
+        rains.forEach(function (item) {
+
+            document.write(item + "<br>")
+
+        })
+
+        rains.forEach(item => document.write(`${item}<br>`))
+
+        document.write("<hr>");
+
+        fruits.forEach((item, id) => {
+            document.write(item + id + "<br>")
+        })
+
+        // 배열
+        // ab값을 가지는 요소를 찾아서 하트 이모지로 변경
+        let str = ["ab", "bb", "cc", "ab", "dd"];
+        str.forEach((s, id, arr) => {
+            if (s == "ab") {
+                arr[id] = "😍"
+            }
+        })
+
+        document.write(str);
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>forEach</h1>
+    <p>배열에 있는 데이터를 순차적으로 실행</p>
+    <pre>
+        배열명.forEach((배열데이터를저장할변수, 순서,별칭배열명) => 실행할명령어)
+    </pre>
+</body>
+
+</html>

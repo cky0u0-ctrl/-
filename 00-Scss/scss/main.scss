@@ -1,0 +1,210 @@
+//컬러 서브웨이
+//메인 브랜드 컬러, 서브 브랜드컬러
+//글자색,글자크기
+//모서리 둥글기,갭
+//반응형 사이즈
+$브랜드메인컬러: #009223;
+$브랜드서브컬러: #ffce32;
+$텍스트메인컬러: #292929;
+$텍스트서브컬러: #666;
+$size: 30px;
+$텍스트기본크기: 16px;
+$아이패드: 1280px;
+$모바일768: 768px;
+$모바일480: 480px;
+
+//믹스인
+//flex
+@mixin myFlex($jc: space-between, $gap: null, $al: null) {
+    display: flex;
+    justify-content: $jc;
+    gap: $gap;
+    align-items: $al;
+}
+
+//position
+@mixin myPos($p: absolute, $top: null, $bottom: null, $left: null, $right: null) {
+    position: $p;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}
+
+//반응형
+@mixin respond($media) {
+    @media screen and (max-width: $media) {
+        @content;
+    }
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0.2);
+
+    @include respond($아이패드) {
+        padding: 0 1rem;
+    }
+}
+
+//header
+header {
+    .inner {
+        @include myFlex($al: center);
+
+        .logo {
+            a {}
+        }
+
+        nav {
+            @include respond($모바일768) {
+                @include myPos($p: fixed, $left: -100%, $top: 0);
+                background: $텍스트메인컬러;
+                width: 70%;
+                height: 100vh;
+
+            }
+
+            .close-btn {
+                display: none;
+            }
+
+            .main-menu {
+                @include myFlex($gap: $size);
+            }
+        }
+
+        .gnb-list {
+            @include myFlex($gap: 10px);
+
+            @include respond($모바일768) {
+                display: none;
+                ;
+            }
+        }
+
+        .ham-btn {
+            display: none;
+
+            @include respond($모바일768) {
+                display: block;
+            }
+
+            a {}
+        }
+    }
+}
+
+
+// main-slider-wrap
+
+.main-slider-wrap {
+    height: 50vw;
+    min-height: 400px;
+    max-height: 760px;
+    background: #009233;
+}
+
+// main
+section {
+    .title {
+        font-size: $size;
+    }
+
+    .news-list {
+        @include myFlex($gap: $size);
+
+
+        @include respond($모바일480) {
+            // display: block;
+            flex-direction: column;
+        }
+
+
+
+        >div {
+
+            border: 1px solid black;
+            height: 100px;
+            width: 50%;
+            background-color: dodgerblue;
+
+            @include respond($모바일480) {
+                width: 100%;
+
+
+            }
+        }
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+
+        gap: $size ;
+
+        @include respond($모바일768) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include respond($모바일480) {
+            grid-template-columns: 1fr;
+            // display: block;
+        }
+
+        >div {
+            border: 1px solid blue;
+            padding: 20px;
+
+            &.product1 {
+                grid-row: span 2;
+
+                @include respond($모바일768) {
+                    grid-column: span 2;
+                }
+
+                @include respond($모바일480) {
+                    grid-column: 1/2;
+                }
+            }
+        }
+    }
+
+    .event-list {
+        @include myFlex($gap: $size);
+
+        @include respond($모바일768) {
+            flex-wrap: wrap;
+        }
+
+        >div {
+            height: 200px;
+            background: skyblue;
+            width: 25%;
+
+            @include respond($모바일768) {
+
+                // width:;
+
+
+                width: calc(50% - 15px);
+                order: 0;
+
+            }
+
+            &.event2 {
+                flex: 1;
+
+                @include respond($모바일768) {
+                    order: 1;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+}
+
+// footer

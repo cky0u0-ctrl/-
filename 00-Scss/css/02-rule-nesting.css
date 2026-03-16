@@ -1,0 +1,17 @@
+@charset "UTF-8";
+section {
+  width: 600px;
+}
+section .list {
+  padding: 20px;
+}
+section .list > li {
+  font-size: 40px;
+}
+
+p {
+  font-family: "돋움";
+  font-size: 30px;
+  font-weight: "bold";
+  font-style: italic;
+}

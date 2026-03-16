@@ -1,0 +1,18 @@
+/* 전체 글자 크기를 20px */
+* {
+    font-size: 20px;
+}
+
+div {
+    font-size: 10px;
+}
+
+/* .em선택자 부모가 기준,, 글자 크기는 기본의 2배 */
+.em {
+    font-size: 2em;
+}
+
+/* .rem선택자 글자 크기를 root의 2배 - 상단 루트기준,, */
+.rem {
+    font-size: 2rem;
+}

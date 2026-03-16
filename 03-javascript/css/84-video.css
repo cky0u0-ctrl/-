@@ -1,0 +1,42 @@
+.video-wrap {
+    height: 90vh;
+    border: 1px solid red;
+    position: relative;
+}
+
+.video {
+    height: inherit;
+
+}
+
+.video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.control-btn-wrap {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.control-btn {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.playPause>a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images2/play.svg);
+}
+
+.playPause.active>a {
+    background: url(../images2/pause.svg);
+}

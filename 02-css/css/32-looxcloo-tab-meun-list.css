@@ -1,0 +1,16 @@
+/* 점제거 밑줄제거 */
+li {
+    list-style: none;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.tab-menu-list>li>a {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 48px;
+    padding: 5px 20px;
+}

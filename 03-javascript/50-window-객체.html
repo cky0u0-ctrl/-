@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert - 확인버튼만 있음, 경고창
+        // prompt = 데이터를 입력 받음 확인/취소 버튼
+        // confirm - 확인/취소 버튼이 있는 창
+
+        // alert - 설문을 시작하겠습니다
+        // prompt - 나이를 입력받음
+        // confirm - 입력한 나이가 맞는지 확인
+        // 나이가 20살 이상이면 설문이 가능, 20이하면 설문이 불가능
+
+        window.alert("설문을 시작하겠습니다")
+        let userAge = window.prompt("당신의 나이를 입력하세요", "");
+        let okCancle = window.confirm(`당신의 나이가 ${userAge}가 맞나요?`)
+        console.log(okCancle);
+
+        if (okCancle) {
+
+
+            if (userAge >= 20) {
+                document.write("설문이 가능")
+
+            } else {
+                document.write("설문 불가능!!!")
+
+            }
+        }
+
+        else { document.write("설문이 취소 되었습니다") }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

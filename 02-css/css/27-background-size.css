@@ -1,0 +1,43 @@
+/* div {
+    width: 600px;
+    height: 300px;
+    background-color: aqua;
+
+    background-image: url(../images/stackbucks.jpg);
+    margin: 10px;
+
+    background-repeat: no-repeat;
+} */
+
+div {
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+    background: aqua url(../images/stackbucks.jpg) no-repeat;
+
+}
+
+/* 너비가 다 보일수 있도록 높이는 비율에 맞게*/
+.box2 {
+    background-size: 100%;
+
+}
+
+/* 너비 높이 둘다 100% */
+.box3 {
+    background-size: 100% 100%;
+}
+
+/* 높이가 다 보이고, 너비는 비율에 맞게 짤려짐? = 대부분의 배너... */
+.box4 {
+    background-size: cover;
+}
+
+.box5 {
+    width: 100%;
+    background-size: cover;
+}
+
+.box6 {
+    background-size: contain;
+}

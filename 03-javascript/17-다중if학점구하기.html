@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+    <h1>다중 if</h1>
+    <p>조건이 여러개 일때</p>
+    <pre>
+
+if(조건문1){
+
+    조건문1이 참일때 실행할 문장;
+}
+
+else if(조건문2){
+
+조건문1이 거짓이고, 조건문2가 참일경우 실행할 문장;
+
+}
+
+else if(조건문3){
+    조건문1, 조건문2가 거짓이고 , 조건문3이 참일경우 실행할 문장;
+}
+
+else{
+    조건문1.조건문2,조건문3이 거짓일때 실행할 문장;
+}
+
+<!-- 조건3까지 거짓이면 엘스로 계속 조건만들수o -->
+
+</pre>
+    <pre>
+학점구하기
+점수 
+90~100 A 
+80~89 B
+70~79 C
+60~69 D
+그 나머지는 F 
+
+<h2>학점결과</h2>
+</pre>
+
+
+    <script>
+        // 점수를 입력받아서 학점 구하기
+        let score = prompt("점수를 입력하세요", "");
+        if (score >= 90) {
+            document.write("A");
+        }
+
+        else if (score >= 80) {
+            document.write("B");
+        }
+
+        else if (score >= 70) {
+            document.write("C")
+        }
+
+        else if (score >= 60) {
+            document.write("D")
+        }
+
+        else { document.write("F") };
+
+
+
+    </script>
+
+
+</body>
+
+</html>

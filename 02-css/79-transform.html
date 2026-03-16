@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 오류 3d뒤집기 */
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .flip-card-li {
+            width: 300px;
+            height: 375px;
+            /* border: 2px solid; */
+
+        }
+
+        .flip-card-li .flip-card-inner {
+            position: relative;
+            transform-style: preserve-3d;
+            transform: 0.5s;
+        }
+
+        .flip-card-li:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-li .img-box {}
+
+        .flip-card-li .text-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flip-card-li">
+        <div class="flip-card-inner">
+            <div class="img-box"> <img src="./images/imgi_2_202601071737232101010795.jpg" alt="">
+            </div>
+        </div>
+        <div class="text-box">
+            <h3>스트로베리</h3>
+            <p>딸기 시리즈,티,파르페,라떼,프라레</p>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

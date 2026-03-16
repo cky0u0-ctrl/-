@@ -1,0 +1,66 @@
+/* 그림 너비, 높이 70,70
+배경색 핑크 */
+
+/* .quick-list>.q1>a~ */
+/* .q1>a {
+    display: block;
+    background-color: pink;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/subway-quick.png);
+    text-indent: -9999px;
+    background-position: 0 0;
+}
+
+.q2>a {
+    display: block;
+    background-color: pink;
+    width: 70px;
+    height: 70px;
+    text-indent: -9999px;
+    background-image: url(../images/subway-quick.png);
+    background-position: -70px 0;
+}
+
+.q3>a {
+    display: block;
+    background-color: pink;
+    width: 70px;
+    height: 70px;
+    text-indent: -9999px;
+    background-image: url(../images/subway-quick.png);
+    background-position: -140px 0;
+}
+
+.q4>a {
+    display: block;
+    background-color: pink;
+    width: 70px;
+    height: 70px;
+    text-indent: -9999px;
+    background-image: url(../images/subway-quick.png);
+    background-position: -210px 0;
+} */
+
+.quick-list>li>a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color: pink;
+    background-image: url(../images/subway-quick.png);
+    text-indent: -9999px;
+}
+
+.quick-list>.q2>a {
+    background-position: -70px 0;
+}
+
+.quick-list>.q3>a {
+    background-position: -140px 0;
+}
+
+.quick-list>.q4>a {
+    background-position: -210px 0;
+}
+
+/* 공통사항은 한번에 묶어주기 - 차이점만 */

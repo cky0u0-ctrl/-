@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li {
+            list-style: none;
+        }
+
+        /* 메인메뉴 글자크기 24px 글자색 #333 */
+        .main-menu>li>a {
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* 모든 메뉴 밑줄제거하기 */
+        .main-menu li a {
+            text-decoration: none;
+        }
+
+        /* 서브 메뉴 글자색 #666 */
+        .sub-menu li a {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul.main-menu>li*3>a[href="#"]{menu$}+ul.sub-menu>li*3>a[href="#"]{sub$} -->
+    <ul class="main-menu">
+        <li>
+            <a href="#">menu1</a>
+            <ul class="sub-menu">
+                <li><a href="#">sub1</a></li>
+                <li><a href="#">sub2</a></li>
+                <li><a href="#">sub3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">menu2</a>
+            <ul class="sub-menu">
+                <li><a href="#">sub1</a></li>
+                <li><a href="#">sub2</a></li>
+                <li><a href="#">sub3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">menu3</a>
+            <ul class="sub-menu">
+                <li><a href="#">sub1</a></li>
+                <li><a href="#">sub2</a></li>
+                <li><a href="#">sub3</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

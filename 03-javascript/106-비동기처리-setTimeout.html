@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 비동기처리
+        // console.log("1.시작") ->  Call Stack
+        // setTimeout - Web API 위임
+        // for console.log(끝) => Call Stack
+        // 0주후에 Queue에서 대기 => Stack이 비었으면 Stack으로 이동하여 실행
+        console.log("1.시작")
+        setTimeout(() => {
+            console.log
+                ("2.중간?")
+
+        }, 0)
+        for (i = 0, i < 10000; i++) {
+            console.log("3.끝")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

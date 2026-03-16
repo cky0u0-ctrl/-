@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Call Stach, web API,Callback Queue(promise, setTimeout)
+        console.log("1")
+        // 외부데이터 호출하기 fetch(주소).then(()=>{})
+        // Wep API
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(() => {
+                console.log("3")
+            })
+        console.log("2")
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

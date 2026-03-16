@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .item-list {
+            display: grid;
+
+            /* background: pink; */
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 40px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+            /* 이렇게 하면 반응형끝 */
+
+        }
+
+        .item-list>li {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid list</h1>
+    <ul class="item-list">
+        <li><img src="./images/drink/drink (2).png" alt=""></li>
+        <li><img src="./images/drink/drink (2).png" alt=""></li>
+        <li><img src="./images/drink/drink (3).png" alt=""></li>
+        <li><img src="./images/drink/drink (4).png" alt=""></li>
+        <li><img src="./images/drink/drink (5).png" alt=""></li>
+        <li><img src="./images/drink/drink (2).png" alt=""></li>
+        <li><img src="./images/drink/drink (7).png" alt=""></li>
+        <li><img src="./images/drink/drink (2).png" alt=""></li>
+    </ul>
+</body>
+
+</html>

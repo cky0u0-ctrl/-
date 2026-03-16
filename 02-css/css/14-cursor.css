@@ -1,0 +1,69 @@
+p {
+    background-color: plum;
+}
+
+.cursor1 {
+    cursor: all-scroll
+}
+
+.cursor2 {
+    cursor: cell;
+}
+
+.cursor3 {
+    cursor: col-resize;
+}
+
+.cursor4 {
+    cursor: copy
+}
+
+.cursor5 {
+    cursor: crosshair
+}
+
+.cursor6 {
+    cursor: e-resize
+}
+
+.cursor7 {
+    cursor: grab
+}
+
+.cursor8 {
+    cursor: grabbing
+}
+
+.cursor9 {
+    cursor: help
+}
+
+.cursor10 {
+    cursor: move
+}
+
+.cursor11 {
+    cursor: n-resize
+}
+
+
+
+
+/* 아래두개 매우 중요~기억하세요 */
+/* button에 마우스 모양 변경 */
+.cursor12 {
+    cursor: pointer;
+}
+
+.cursor13 {
+    cursor: wait
+}
+
+.cursor14 {
+    cursor: zoom-in
+}
+
+/* 사용자모양 */
+.cursor15 {
+    cursor: url(../images/imgi_7_sns_instagram.png), auto;
+}

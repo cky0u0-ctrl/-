@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            background: skyblue;
+            margin-bottom: 20px;
+
+        }
+
+        .wrap>div {
+            background: pink;
+            border: 1px solid black;
+
+        }
+
+        .flexwrap {
+            display: flex;
+            flex-wrap: wrap;
+            /* 각각알아서 반응형으로쓰임! - 사이즈적용되어정렬 */
+            /* gap: 20px; */
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+
+
+        .flexwrap>div {
+            /* width: 200px; */
+            width: calc(100% / 3 - 10px)
+        }
+
+        .gridwrap {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: repeat(3, 200px); */
+            /* grid-template-columns: 1tr 1tr 1tr; */
+            grid-template-columns: repeat(3, auto);
+            /* 기기 디스플레이 맞게 숫자만 바꿔줌 - 계산해서 보임 - 2차원적 개념 플렉스와차이 */
+            gap: 20px;
+            /* 위치는 바뀌지 않음 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid</h1>
+    <p>flex: 1차원 레이아웃</p>
+    <p>grid : 2차원 레이아웃</p>
+    <div class="wrap flexwrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <div class="wrap gridwrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.main-slider {}
+
+.main-slider .swiper-slide {
+
+    height: 45vw;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+    width: 1em;
+    height: 1em;
+    background: #fff;
+    opacity: 0.6;
+    border-radius: 16px;
+
+}
+
+.swiper-pagination-bullet-active {
+    width: 2em;
+    opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffffff;
+}

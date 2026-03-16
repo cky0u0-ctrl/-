@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>공간 분할 태그</h1>
+    <p>div : 여러개의 블럭 또는 인라인 요소를 묶어줄때 사용한다</p>
+    <p> spoan : 인라인 요소를 묶어줄때 사용한다. 주로 글자를 묶음</p>
+
+    <h1>태그에 이름 주기</h1>
+    <p>id : 요소의 크기가 큰 경우 , 반복 사용 불가 ,
+        같은페이지내에서 링크가 필요한 경우 , map의 이름 ,
+        input의 for와 연결할 경우</p>
+    <p>name :
+        form요소의 이름을 줄때 사용하고, 데이터가 전송되었을때
+        그 데이터값을 저장하는 용도로 사용된다
+    </p>
+    <p>class :
+        요소의 크기가 작은 경우 ,반복할 수 있다 ,
+        CSS를 주기위한 이름
+    </p>
+
+    <h1>이름 주는 방법</h1>
+    <p>BEM - BlOCK Element modifier (블럭_요소--기능또는 속성)</p>
+    <p>이름을 짓는 방법론 중 하나</p>
+    <p>낙타봉표기법 - headerMainMenu</p>
+    <p>스네이크 - header_nav</p>
+    <p>케밥 - header-nav</p>
+
+    <h1>시멘틱 태그</h1>
+    <p>html5 - 의미를 가지는 요소를 태그로 사용</p>
+    <pre>
+        1. header : 홈페이지에서 상단에 들어가는 요소를 묶을때 사용
+        - 로고, 탑메뉴, 메인메뉴
+
+        2. footer : 홈페이지에서 하단에 들어가는 요소를 묶을때 사용
+        - 하단로고, 하단메뉴, 주소, sns 
+
+        3. nav : 메인메뉴를 묶을때 
+
+        4.aside : 퀵메뉴, 서브페이지의 서브메뉴를 묶어줄때 사용
+
+        5.section : 글자가 많은 본문내용을 묶어줄때,
+        h2-h6의 제목이 필수
+
+        6. article : 독립적 본문의 한 단위를 묶을때 ,
+        h2-h6의 제목이 필수
+        <!-- 아티글 요새 사용잘안함 -->
+        7. main : 본문 영역을 전체로 묶을때
+
+        <section>
+            <h2></h2>
+           <article></article>
+           <article></article>
+        </section>
+
+        <article>
+            <h2></h2>
+            <section><h2></h2>
+            </section>
+        </article>
+
+        <div>
+            <section><h2></h2>
+            </section>
+            <article></article>
+        </div>
+
+        <section>
+            <div></div>
+        </section>
+
+    </pre>
+
+</body>
+
+</html>

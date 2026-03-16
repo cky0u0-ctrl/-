@@ -1,0 +1,14 @@
+section {
+    background-color: #fff;
+    height: 550px;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.section2 {
+    background-image: url(../images/stackbucks.jpg);
+    background-attachment: fixed;
+
+}

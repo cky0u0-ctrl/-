@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let unm = 10;
+        // 1.선언적함수
+        function 일반함수(uName) {
+            document.write(`${uName}안녕<br>`)
+
+        }
+        일반함수("일반함수");
+        // 2.함수표현식,익명적함수
+        let 익명함수 = function (uName) {
+            document.write(`${uName}안녕<br>`)
+        }
+        익명함수("익명함수");
+        // 3.화살표 함수
+        // 매개값이 하나인 경우 () 생략가능
+        // 실행문장이 하나면 {} 생략가능 ~~~~~~~두개면불가
+        let 화살표함수 = a =>
+            document.write(`${a}안녕!!!<br>`)
+
+        // let 화살표함수 = a => {
+        //     document.write(`${a}안녕!!!<br>`)
+        // }
+        // let 화살표함수 = (a) => {
+        //     document.write(`${a}안녕!!!<br>`)
+        // }
+
+        화살표함수("화살표")
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

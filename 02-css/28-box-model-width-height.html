@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            background: pink;
+            height: 200px;
+            width: 600px;
+
+        }
+
+        .box2 {
+            background: skyblue;
+            width: 50%;
+            height: 100px;
+            max-width: 600px;
+            max-height: 200px;
+        }
+
+        span {
+            background: green;
+            /* 인라인은 너비와 높이를 가질 수 없고, 내용물만큼만 영역을 차지한다 */
+            /* 너비높이 안때 면 인라인,블럭 요소 구분가능 */
+            width: 500px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box model</h1>
+    <p>블럭요소에 주는 속성</p>
+    <p>width - block,img</p>
+    <p>height - block,img</p>
+    <hr>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <span>span</span>
+
+
+</body>
+
+</html>

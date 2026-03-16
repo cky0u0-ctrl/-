@@ -1,0 +1,126 @@
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* pc 숨기기 */
+.ham-btm,
+.close-btn,
+.m-gnb {
+    display: none;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 0; */
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu>li {
+    position: relative;
+}
+
+.main-menu>li>a {
+    display: block;
+    padding: 0 20px;
+    line-height: 60px;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: #ccc;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    padding: 0px 0;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+
+.sub-menu.active {
+    height: 160px;
+    padding: 10px 0;
+}
+
+.sub-bg {
+    background-color: green;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 60px;
+    transition: 0.8s;
+}
+
+.sub-bg.active {
+    height: 160px;
+}
+
+
+.gnb {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width:768px) {
+
+    /* 숨기기 */
+    .gnb {
+        display: none;
+    }
+
+    /* 보이기 */
+    .ham-btm,
+    .close-btn,
+    .m-gnb {
+        display: block;
+    }
+
+    .nav-wrap {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background-color: #333;
+        top: 0;
+        left: -120%;
+        color: #fff
+    }
+
+    .m-gnb {
+        display: flex;
+        gap: 20px;
+    }
+
+    .main-menu {
+        display: block;
+        margin-top: 20px;
+
+    }
+
+    .main-menu {
+        border-bottom: 1px solid #999;
+        background: #111;
+    }
+
+    .sub-menu {
+        position: static;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: -40px;
+        top:
+            10px;
+        width: 32px;
+    }
+
+    .ham-btn {
+        width: 32px;
+    }
+}

@@ -1,0 +1,20 @@
+/* 메인컬러 #009223 
+섹션의 제목크기는 40px - > 60px*/
+
+:root {
+    --메인컬러: #d2b7e4;
+    --subColor: #ffce32;
+    --sectiontitle: 40px;
+}
+
+header {
+    border-top: 5px solid var(--메인컬러);
+}
+
+h1 {
+    color: var(--메인컬러);
+}
+
+section>h2 {
+    font-size: var(--sectiontitle)
+}

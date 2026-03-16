@@ -1,0 +1,181 @@
+/* pc */
+
+/* 1.제거하기 */
+.ham-btn,
+.close-btn {
+    display: none;
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: rgba(255, 0, 0, 0.2);
+    position: relative;
+
+}
+
+header {
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    text-align: center;
+
+
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px 0;
+}
+
+.gnb-list {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    display: flex;
+    gap: 12px;
+}
+
+.main-slider-wrap {
+    height: 300px;
+    background: green;
+}
+
+
+.section-title {
+    font-size: 3rem;
+    margin: 1rem 0 2rem;
+    /* 기본글씨 바뀔시 함께 변동 */
+}
+
+.company-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.company-list>div {
+    height: 200px;
+
+    width: 25%;
+}
+
+.company-list>.box1 {
+    background: rgb(126, 119, 219);
+}
+
+.company-list>.box2 {
+    background: salmon;
+    flex: 1;
+}
+
+.company-list>.box3 {
+    background: rgb(130, 255, 140)
+}
+
+.event-list {
+    display: flex;
+    gap: 20px;
+}
+
+.event-list>div {
+    flex: 1;
+    height: 100px;
+}
+
+.event-list>.event-left {
+    background: #fff;
+}
+
+
+.event-list>.event-right {
+    background: #666;
+}
+
+footer {
+    line-height: 100px;
+}
+
+/* ipad 768~280*/
+@media screen and (max-width:1280px) {
+
+    /* 1.제거하기 */
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: #fff;
+    }
+
+    .main-menu {
+        display: block;
+    }
+
+
+    /* 포지션을 안준것처럼 만들기 */
+    .gnb-list {
+        position: static;
+    }
+
+    /* 2.보이기 */
+    .ham-btn,
+    .close-btn {
+        display: block;
+    }
+
+    .ham-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transform: translateY(-50%);
+    }
+
+    /* 3.100% 만들기 */
+    .company-list {
+        flex-wrap: wrap;
+        /* 크기가줄어드면 안요소가 떨어짐 */
+
+    }
+
+    .company-list>div {
+        width: calc(50% - 10px);
+    }
+
+    .company-list>.box2 {
+        width: 100%;
+        flex: none;
+        order: -1;
+    }
+
+    /* 세부 */
+}
+
+/* media 360,480,640 ~768*/
+@media screen and (max-width:768px) {
+    body {
+        font-size: 12px;
+    }
+
+    .company-list>div {
+        width: 100%;
+
+    }
+
+    .company-list>.box2 {
+        order: 0;
+    }
+
+    .event-list {
+        flex-wrap: wrap;
+    }
+
+    .event-list>div {
+        flex: none;
+        width: 100%;
+    }
+}

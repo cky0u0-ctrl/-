@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>룩스루 - LooxLoo</title>
+    <link rel="shortcut icon" href="./images/favi.ico">
+    <link rel="stylesheet" href="./css/font.css/font.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- css적용순서 중요해요 (폰트 - 배열 - 스타일) 순으로 -->
+
+</head>
+
+<body>
+    <!-- 1.header -->
+    <header>
+        <div class="inner">
+            <div class="header-left">
+                <p class="ham-btn"><a href="#"><img src="./images/imgi_1_mo_hamburger.svg" alt="햄버거 버튼"></a></p>
+                <h1 class="logo"><a href="#"><img src="./images/imgi_2_mh_logo.svg" alt="룩스루 로고"></a></h1>
+                <nav>
+                    <!-- ul.main-menu>li*5>a[href="#"] -->
+                    <ul class="main-menu">
+                        <li><a href="#">BELUDOG</a></li>
+                        <li><a href="#">MINKUI</a></li>
+                        <li><a href="#">BLUEDOG BABY</a></li>
+                        <li><a href="#">LITTLE GROUND</a></li>
+                        <li><a href="#">LAUGHING CHILD</a></li>
+                    </ul>
+                </nav>
+                <!-- 디아브 안묶이니까 css적용안됨 -->
+            </div>
+            <!-- ul.gnb-list>li*3>a[href="#"]>img -->
+            <ul class="gnb-list">
+                <liㄴ><a href="#"><img src="./images/search.svg" alt="검색"></a></li>
+                    <li><a href="#"><img src="./images/user.svg" alt="로그인"></a></li>
+                    <li><a href="#"><img src="./images/cart.svg" alt="장바구니"><span class="cart-count">0</span></a>
+                    </li>
+            </ul>
+
+        </div>
+    </header>
+    <!-- 2.main -->
+    <main>
+        <div class="main-slider-wrap">
+
+        </div>
+        <section class="popular-item-wrap">
+            <div class="inner">
+                <h2 class="title">블루독베이비 ㅣ 온라인 단독 출시👀</h2>
+                <ul class="tab-menu-list">
+                    <li class="active"><a href="#">버블캔디런칭</a></li>
+                    <li><a href="#">온라인단독</a></li>
+                    <li><a href="#">신상세트웨어</a></li>
+                    <li><a href="#">선물추천</a></li>
+                </ul>
+                <div class="popular-item">
+                    <div>
+                        <ul class="popular-list">
+                            <li>
+                                <div class="img-box "><a href="">
+                                        <img src="./images/imgi_255_859b0906116e20646863f0295a6682a7.jpg.webp" alt="">
+                                    </a>
+                                    <a href="#" class="heart"></a>
+                                    <span class="coupon">15% 쿠폰</span>
+                                </div>
+                                <div class="text-box">
+                                    <p><strong>bluedogbaby</strong>
+                                        <span>버블캔디 바디슈트세트</span>
+                                    </p>
+                                    <p class="prise">58,000</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><a href="">
+                                        <img src="./images/imgi_256_462a4e3c5345522dcbf06210f8ce9e11.jpg.webp" alt="">
+                                    </a><a href="#" class="heart"></a>
+                                    <span class="coupon">15% 쿠폰</span>
+                                </div>
+                                <div class="text-box">
+                                    <p><strong>bluedogbaby</strong>
+                                        <span>버블캔디 바디슈트세트</span>
+                                    </p>
+                                    <p class="prise">58,000</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><a href="">
+                                        <img src="./images/imgi_257_318057a6ba1dc7183fe6e906407356c1.jpg.webp" alt="">
+                                    </a><a href="#" class="heart"></a>
+                                    <span class=" coupon">15% 쿠폰</span>
+                                </div>
+                                <div class="text-box">
+                                    <p><strong>bluedogbaby</strong>
+                                        <span>버블캔디 바디슈트세트</span>
+                                    </p>
+                                    <p class="prise">58,000</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="img-box"><a href="">
+                                        <img src="./images/imgi_258_fb01d2a06040a28a5230bfeaa3aa6542.jpg.webp" alt="">
+                                    </a>
+                                    <a href="#" class="heart"></a>
+                                    <span class="coupon">15% 쿠폰</span>
+                                </div>
+                                <div class="text-box">
+                                    <p><strong>bluedogbaby</strong>
+                                        <span>버블캔디 바디슈트세트</span>
+                                    </p>
+                                    <p class="prise">58,000</p>
+                                </div>
+                            </li>
+
+
+                            <!-- 스크립트에서 마크업 고정1 만들고 돌려서 적용... -->
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="looks-moment-wrap">
+            <div class="inner">
+                <h2 class="title">주목할 브랜드 소식</h2>
+                <div class="brand-list-wrap">
+                    <!-- ul.brand-list>li*3>a[href="#"]>(div.img-box>img)+div.text-box>strong>h3>p -->
+                    <ul class="brand-list">
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./images/imgi_189_57da489bd789f79bc0fabe756d6d22c5.jpg"
+                                        alt=""></div>
+                                <div class="text-box">
+                                    <strong>bluedog </strong>
+                                    <h3> SPRING OUTLET <br> OPEN!</h3>
+                                    <!-- 반응형웹페이지 만들땐 줄바꾸기말고 스판으로 묶기!!!!! -->
+                                    <p>
+                                    <div>아울렛 할인가에 쿠폰까지 블루독 아울렛 만나보기</div>
+                                    </p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./images/imgi_190_9edf7eb471557ea65436228caa99f573.jpg"
+                                        alt=""></div>
+                                <div class="text-box">
+                                    <strong>Rougefee </strong>
+                                    <h3>일상 속 로맨틱한 <br> 겨울 스타일 </h3>
+                                    <p>>특별한 날부터 데일리까지 로맨틱하게</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img-box"><img src="./images/imgi_191_a89da84e3ccdab21619a642c0b355465.jpg"
+                                        alt=""></div>
+                                <div class="text-box">
+                                    <strong>bluedog </strong>
+                                    <h3> 선물하기 좋은 <br> 언더웨어</h3>
+                                    <p>아이 피부를 생각한 부드러운 소재</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+
+                </div>
+            </div>
+        </section>
+        <section class="winter-full-wrap">
+            <div class="inner">
+                <h2 class="title">MD가 엄선한 위클리 코디 추천</h2>
+                <div class="coord-wrap">
+                    <ul class="coord-list">
+                        <li>
+                            <div class="big-img"><img src="./images/imgi_205_a89507f64876dd96c5015100fae92e1d.jpg"
+                                    alt="">
+                            </div>
+                            <div class="coord-right">
+                                <div class="list-title-box">
+                                    <strong></strong>
+                                    <h3>활동성을 더한 <br> 아웃도어 윈터 룩</h3>
+                                    <p>컬러 포인트로 살아나는 캐주얼 아웃도어 스타일❄️</p>
+                                    <p>놀 때도, 이동할 때도 <br> 편안하게 어울려요</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <img src="./images/imgi_206_e0ad73b085fe8c6daaa3fec9f981d7b6.jpg" alt="">
+                                            <div class="text-box">
+                                                <strong>R.ROBOT</strong>
+                                                <p>포켓 다운점퍼 (14C29-114-03)</p>
+                                                <div>
+                                                    <span class="sale">75%</span>
+                                                    <span class="sale-price">57,290</span>
+                                                    <span class="price">229,000</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./images/imgi_207_821868a2299d01c937508d68fa1c29ed.jpg" alt="">
+                                            <div class="text-box">
+                                                <strong>R.ROBOT</strong>
+                                                <p>포켓점퍼 (14C29-114-03)</p>
+                                                <div>
+                                                    <span class="sale">75%</span>
+                                                    <span class="sale-price">57,290</span>
+                                                    <span class="price">229,000</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="">
+                                            <div class="text-box"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- div>ul>li*7>div.main+(div.sub>li*2>img)+div.text ///직접해봄 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 3.footer -->
+    <footer>
+        <div class="inner">
+            <div class="footer-left">
+                <p class="footer-logo"><img src="./images/imgi_2_mh_logo.svg" alt="룩스루 로고"></p>
+                <address>
+                    <!-- div*4>p*3>strong+span -->
+                    <div>
+                        <p><strong>상호명</strong>
+                            <span>(주)서양네트웍스</span>
+                        </p>
+                        <p><strong>대표이사</strong>
+                            <span>방소현,호패트릭픽추엔</span>
+                        </p>
+                        <p><strong>주소</strong>
+                            <span> 06621 서울 서초구 서초대로78길 22 홍우제2빌딩 7, 8, 9, 10층</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p><strong>사업자등록번호</strong>
+                            <span>114-81-52674[사업자정보확인]</span>
+                        </p>
+                        <p><strong>통신판매업신고번호</strong>
+                            <span>2021-서울서초-2971호</span>
+                        </p>
+                        <p><strong>개인정보관리책임자</strong>
+                            <span>신재훈</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p><strong>fax</strong>
+                            <span>02-3444-2110</span>
+                        </p>
+                        <p><strong>mail</strong>
+                            <span>contact@suhyang.kr</span>
+                        </p>
+                        <p><strong>호스팅 제공자</strong>
+                            <span>카페24(주)</span>
+                        </p>
+                    </div>
+                </address>
+
+                <!-- ul.util-menu>li*3>a[href="#"] -->
+                <ul class="util-menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">멤버쉽약관</a></li>
+                </ul>
+
+                <p class="copy">&copy;2025 SUHYANG NETWORKS CO. LTD. ALL RIGHTS RESERVED.</p>
+                <p class="text">고객님은 안전거래를 위해 현금등으로 결제 시 저희 쇼핑몰이 가입한 PG 에스크로 구매안전 서비스를 이용하실 수 있습니다.
+                </p>
+            </div>
+            <div class="footer-right">
+                <ul class="info-menu-list">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">신규회원혜택</a></li>
+                    <li><a href="#">멤버쉽혜택</a></li>
+                    <li><a href="#">대리점문의</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                </ul>
+                <div class="customer-center">
+                    <p><span>고객센터 1577-0087</span>(유료)</p>
+                    <p>운영시간 월~금 (공휴일 휴무) 09:30 ~ 17:30 </p>
+                    <p>점심시간 12:30 ~ 13:30</p>
+                </div>
+                <div class="etc-wrap">
+                    <ul class="sns-list">
+                        <li><a href="#"><img src="./images/insta.svg" alt="인스타"></a></li>
+                        <li><a href="#"><img src="./images/youtube.svg" alt="유튜브"></a></li>
+                    </ul>
+
+                    <div class="family-site">
+                        <a href="#">서양네트웍스</a>
+                        <!-- ul.family-list>li*2>a[href="#"] -->
+                        <ul class="family-list">
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">인재채용</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

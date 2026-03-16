@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // setInterval 일정시간 마다 명령을 반복할때
+        // 1초마다 콘솔창에 1씩 증가된 숫자 출력하기
+        let count = 1;
+        let timer1 = window.setInterval("console.log(count++)", 1000);
+
+        let num = 10;
+        // 1.선언적함수 , 명명함수
+        // function numCount() {
+        //     console.log(num++);
+        // }
+
+        // 2.표현식함수, 익명함수
+        // let numCount = function () {
+        //     console.log(num++)
+        // }
+
+        // 3.화살표함수
+        let numCount = () => { console.log(num++) }
+
+        let timer2 = window.setInterval(numCount, 1000)
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <button onclick="clearInterval(timer1)">stop1</button>
+
+    <button onclick=" clearInterval(timer2)">stop2</button>
+    <!-- 셋인터벌 동작넣을 시 변수에 넣어주기 필수 -->
+
+
+    <h1>senInterval</h1>
+    <p>일정마다 명령을 반복해서 실행할때</p>
+    <pre>
+    window.senInterval(" 실행할명령어",시간) window.senInterval(함수명,시간) window.senInterval(()=>{},시간)
+        시간:ms 단위를 사용한다 1초 1000
+        </pre>
+    <p>clearInterval:setInterval을 멈추고 싶을때 사용</p>
+
+
+</body>
+
+</html>

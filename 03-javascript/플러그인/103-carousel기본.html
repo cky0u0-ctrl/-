@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+
+</head>
+
+<body>
+    <sectiopn class="ranking-list-wrap swiper">
+        <ul class="ranking-list swiper-wrapper">
+            <!-- li.swiper-slide*10>a[href="#"]>img[src="./images/rank/rank-$.jpg"]+strong{$} -->
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-1.jpg" alt=""><strong>1</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-2.jpg" alt=""><strong>2</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-3.jpg" alt=""><strong>3</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-4.jpg" alt=""><strong>4</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-5.jpg" alt=""><strong>5</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-6.jpg" alt=""><strong>6</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-7.jpg" alt=""><strong>7</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-8.jpg" alt=""><strong>8</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-9.jpg" alt=""><strong>9</strong></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./images/rank/rank-10.jpg" alt=""><strong>10</strong></a>
+            </li>
+        </ul>
+    </sectiopn>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        //1280 ~5
+        //768~1280 3
+        //480~4672
+        //그 이하는 1
+
+        let swiper = new Swiper(".ranking-list-wrap", {
+            //보고싶은 배너의 개수
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: { delay: 3000 },
+            //breakpoints
+            breakpoints: {
+                //480~767
+                480: { slidesPerView: 2 },
+                //768~1279
+                768: { slidesPerView: 3 },
+                //1280
+                1280: { slidesPerView: 5 }
+            }
+        })
+    </script>
+
+
+
+    <!-- 1. script css link 먼저 복사 -->
+</body>
+
+</html>

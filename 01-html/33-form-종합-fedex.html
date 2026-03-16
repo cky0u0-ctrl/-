@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form name="mamber" method="get" action="./welcome.html">
+        <table>
+            <tr>
+                <th>패키지수</th>
+                <td><input type="text" id="uName" name="uName"></td>
+            </tr>
+            <tr>
+                <th>패키지가 일치합니까?</th>
+                <td> <label> <input type="radio" name="gender">예</label>
+                    <label><input type="radio" name="gender">아니오</label><br>
+                </td>
+            </tr>
+            <tr>
+                <th>패키지별 무게</th>
+                <td>
+                    <label><input type="text"></label>
+                    <select>
+                        <option value="그램">그램</option>
+                        <option value="kg">kg</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td> <label><input type="checkbox" name="number"></label>고객번호를 사용하여 전송</td>
+            </tr>
+            <tr>
+                <th>픽업/방문접수</th>
+                <td> <select>
+                        <option value="방문">방문</option>
+                        <option value="방문">방문</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>발송날짜</th>
+                <td> <label><input type="date"></label> <br></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+
+                    <input type="submit" value="빠른견적받기">
+                    <input type="reset" value="상세 견적받기">
+
+                    <!-- <td></td> -->
+            </tr>
+        </table>
+    </form>
+
+</html>

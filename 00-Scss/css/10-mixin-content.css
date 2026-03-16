@@ -1,0 +1,9 @@
+.icon::after {
+  content: "icon1";
+}
+
+.icon2::after {
+  content: "icon2";
+  display: black;
+  width: 100px;
+}

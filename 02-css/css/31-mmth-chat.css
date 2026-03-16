@@ -1,0 +1,16 @@
+.chat-wrap {
+    width: 270px;
+    height: 70px;
+    background: #eee;
+    border-radius: 20px;
+}
+
+/* 오류떰 */
+.close-btn>a {
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+}

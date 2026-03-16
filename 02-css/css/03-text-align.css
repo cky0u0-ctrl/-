@@ -1,0 +1,23 @@
+h2 {
+    font-size: 30px;
+    /* 대문자변경 */
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 40px;
+    color: #a57454;
+    font-weight: 600;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}

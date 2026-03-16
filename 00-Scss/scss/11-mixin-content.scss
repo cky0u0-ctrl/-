@@ -1,0 +1,53 @@
+// pc
+
+// header .logo 가운데 보내기
+
+// container 너비1200 배경색, 가운데
+
+
+
+// mobile
+// logo왼쪽
+
+// container 너비가 90%
+
+@mixin myScreen {
+    @media myScreen and (max-width:767px) {
+        @content;
+    }
+}
+
+header {
+
+    .logo {
+        text-align: center;
+
+        @include myScreen() {
+            text-align: right;
+        }
+    }
+
+}
+
+.container {
+
+    width: 1200px;
+    background: skyblue;
+    margin: 0 auto;
+
+    @include myScreen() {
+        width: 80%;
+    }
+}
+
+// @include myScreen() {
+//     header {
+//         .logo {
+//             text-align: left;
+//         }
+//     }
+
+//     .container {
+//         width: 90%;
+//     }
+// }

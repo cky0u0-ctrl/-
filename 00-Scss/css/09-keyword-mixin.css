@@ -1,0 +1,22 @@
+.wrap {
+  width: 600px;
+  height: 400px;
+  background: skyblue;
+  position: releative;
+}
+.wrap .fixed {
+  width: 100px;
+  height: 100px;
+  background: hotpink;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
+.wrap .absolute {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}

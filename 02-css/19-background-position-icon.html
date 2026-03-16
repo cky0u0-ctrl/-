@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map {
+            background-color: lightpink;
+        }
+
+        .map>a {
+            background-image: url(./images/navericon.png);
+            /* 인라인은 너비와 높이를 가질 수 없다 */
+            display: block;
+            background-position: -558px -12px;
+            width: 44px;
+            height: 56px;
+            text-indent: -9999px;
+
+        }
+
+        .broad {
+            width: 40px;
+            height: 40px;
+            background-image: url(./images/navericon.png);
+            background-position: -752px -306px;
+            text-indent: -9999px;
+            /* 글씨 다른곳이동 */
+        }
+
+        .cafe {
+            background-image: url(./images/navericon.png);
+            width: 48px;
+            height: 48px;
+            background-position: -864px -100px;
+            text-indent: -9999px;
+
+        }
+
+        /* 블럭은명령어 들음 - 특히너비 + 인라인은 명령어안들음 = 다른방법있음(디스플레이=보여주세요 : 태그기능명?) */
+    </style>
+</head>
+
+<body>
+    <h1>naver icon</h1>
+    <p>background-position을 이용</p>
+
+    <div class="map"><a href="">지도</a></div>
+    <div class="broad">치지직</div>
+    <div class="cafe">카페</div>
+    <p>너비: 48,48 /
+        x축 : 864 /
+        y축 : 100
+    </p>
+</body>
+
+</html>

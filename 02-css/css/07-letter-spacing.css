@@ -1,0 +1,11 @@
+/* 기본 글자 크기는 16px */
+
+/* 자간 조절 */
+.spacing1 {
+    letter-spacing: 1em;
+}
+
+/* 단어 간격 조절 */
+.spacing2 {
+    word-spacing: 1em;
+}

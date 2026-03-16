@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li앞 장식 제거 */
+        li {
+            list-style: none;
+        }
+
+        /* 기본 a 는 글자색 #666, 밑줄없음
+        마우스를 올리면  a:hover 글자색 #009229, 밑줄있음 */
+        .menu>li>a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        /* 호버는 마크업에 안나오는 가상요소임 */
+        .menu>li>a:hover {
+            color: #009223;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>가상선택자</h1>
+    <p>마크업에 없는 요소를 선택자로 사용할때</p>
+    <p>a 링크기능을 가지는 요소를
+        마우스를 올렸을때,
+        마우스를 클릭해서 돌아왔을때
+        마우스를 다운하는 상태
+    </p>
+    <p>링크기능, 클릭후, 다운 => a</p>
+    <p>마우스 호버 => a:hover </p>
+
+
+    <!-- ul.menu>li*5>a[href="#"]{menu$} -->
+    <ul class="menu">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+    </ul>
+</body>
+
+</html>

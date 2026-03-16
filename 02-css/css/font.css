@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "pr";
+    src: url(../font/Pretendard-Thin.woff) format("woff");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "pr";
+    src: url(../font/Pretendard-SemiBold.woff) format("woff");
+    font-weight: 200;
+}

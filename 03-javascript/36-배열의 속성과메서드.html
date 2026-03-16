@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 과일의 종류
+        let fruits = ["사과", "배", "샤인머스켓", "감", "포도"]
+
+
+        // 비와 관련된 요소
+        let rains = ["소나기", "막걸리", "파전", "우산"]
+        // 과일끝에 "레드향"추가
+        fruits.push("레드향");
+        document.write(fruits + "<br>");
+        // 비 배열의 끝에 데이터 하나 제거
+        rains.pop();
+        document.write(rains + "<br>");
+
+        // fruits앞에 "망고"추가
+        fruits.unshift("망고");
+        document.write(fruits + "<br>");
+        // rains 앞에 "커피믹스"
+        rains.unshift("커피믹스");
+        document.write(rains, "<br>");
+        // fruits 앞에 데이터 하나 제거
+        fruits.shift()
+        document.write(fruits + "<br>");
+        // rains 우산,장화 2번째 위치
+        rains.splice(2, 0, "우산", "장화");
+        document.write(rains + "<br>")
+        //fruits 3번째 2개 제거
+        fruits.splice(3, 2);
+        document.write(fruits, "<br>");
+
+        // 정렬
+        rains.sort();
+        document.write(rains + "<br>");
+
+        // 두배열 합치기 total = fruits+rains
+        let total = fruits.concat(rains);
+        document.write(total + "<br>");
+
+        // total 배열의 개수 체크하기 
+        document.write(total.length);
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

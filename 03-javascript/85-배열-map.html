@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.숫자를 저장할 배열
+        let numbers = [1, 2, 3];
+        // 배수로 만들어서 새로운 배열 만들기
+        let dobleNumbers = numbers.map(num => num * 2);
+        document.write(dobleNumbers + "<br>")
+
+        // 2.문자를 저장할 배열
+        let fruits = ["apple ", "banana", "cherry"];
+        // 전부 대문자로 변경하여 새로운 배열
+        let fruitsUpper = fruits.map(f => f.toUpperCase());
+        document.write(fruitsUpper + "<br>");
+
+        // 0:apple , 1:banana 2:cherry
+        let fruitsId = fruits.map((f, index) => `${index}:${f}`)
+        document.write(fruitsId + "<br>");
+
+        // 객체 배열
+        let users = [
+            { name: "홍길동", age: 20 },
+            { name: "김철수", age: 50 },
+            { name: "이영희", age: 30 }
+        ]
+
+
+
+
+
+        // 객체 배열의 데이터중 name만 추출하여 새로운 배열 만들기
+        let names = users.map(user => user.name);
+        document.write(names + "<br>")
+
+        // 홍길동은 나이가 20살입니다
+        let infos = users.map(p => `${p.name}은 나이가 ${p.age}살 입니다`);
+        document.write(infos)
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>map</h1>
+    <p>배열의 데이터를 조작하여 새로운 배열을 만들어준다</p>
+
+</body>
+
+</html>

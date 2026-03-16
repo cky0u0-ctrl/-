@@ -1,0 +1,19 @@
+@mixin icon($url) {
+
+    &::after {
+        content: $url;
+        @content;
+    }
+}
+
+.icon {
+    @include icon("icon1");
+
+}
+
+.icon2 {
+    @include icon("icon2") {
+        display: black;
+        width: 100px;
+    }
+}

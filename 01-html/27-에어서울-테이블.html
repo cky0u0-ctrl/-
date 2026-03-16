@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 4줄 5칸 -->
+    <figure>
+        <table>
+            <!-- tr*2>th*5 -->
+            <!-- tr*2>th+td*4 -->
+            <tr>
+                <th rowspan="2">구분</th>
+                <th colspan="2" id="sale">정규/할인 운임</th>
+                <!-- <th></th> -->
+                <th colspan="2" id="Ssale">특가운임(프로모션 특가운임한정)</th>
+                <!-- <th></th> -->
+            </tr>
+            <tr>
+                <!-- <th></th> -->
+                <th id="adult">성인/소아</th>
+                <th id="child">유이</th>
+                <th id="">성인/소아</th>
+                <th>유아</th>
+            </tr>
+
+            <tr>
+                <th id="eusa">미주노선제오</th>
+                <td headers="sale adult eusa">무게 15kg</td>
+                <td>무게 10kg 허용 개수 : 1개</td>
+                <td>수하물없음</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th id="usa">미주노선</th>
+                <td headers="sale adult usa">무게 : 23kg</td>
+                <td></td>
+                <td>정규할인 운임과 동일</td>
+                <td></td>
+            </tr>
+        </table>
+        <figcaption>에어서울 위탁 수하물 허용령 변경:2018년 2월1일 발권기준</figcaption>
+    </figure>
+</body>
+
+</html>

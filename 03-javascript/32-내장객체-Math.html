@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Math 수학과 관련된 객체 new 연산자 없이 바로 사용
+        let num1 = -5;
+        let num2 = 7;
+
+        // 절대값
+        document.write(Math.abs(num1), "<br>")
+        // 최대값
+        document.write(Math.max(num1, num2, 100, 1), "<br>");
+        // 최소값
+        document.write(Math.min(num1, num2, 100, 1), "<br>");
+        // 랜덤숫자 구하기
+        // 0~1사이의 임의의 숫자
+        // 0~10사이
+        let rand = Math.random() * 10;
+        document.write(rand, "<br>");
+
+        // 반올림 round
+        document.write(Math.round(rand), "<br>")
+
+
+        // /올림 ceil
+        document.write(Math.ceil(rand), "<br>");
+
+
+        // 버림 floor
+        document.write(Math.floor(rand))
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

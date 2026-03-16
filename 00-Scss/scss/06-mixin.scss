@@ -1,0 +1,29 @@
+// 글자색, 글자크기 , 굵기 두께
+// 후손 span 밑줄, 글자두께
+// 부모에 마우스가 호버하면 배경 
+@mixin text-deco {
+    color: green;
+    font-size: 20px;
+    font-weight: 400;
+
+    span {
+        text-decoration: underline;
+        font-weight: 900;
+    }
+
+
+    &:hover {
+        background-color: pink;
+    }
+}
+
+h1 {
+    @include text-deco();
+    font-style: italic;
+}
+
+p {
+
+    display: flex;
+    @include text-deco();
+}

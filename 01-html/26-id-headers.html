@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디,헤더</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>id/header</h1>
+    <p>웹접근성을 높이기 위해서, 데이터를 읽을때 제목을 함께 읽어주도록 할 수 있다</p>
+    <figure>
+        <table>
+            <!-- <caption>인증사이트</caption> -->
+            <tr>
+                <th id="year">연도</th>
+                <th id="site1">신청사이트</th>
+                <th id="site2">인증사이트수</th>
+                <th id="pass">합격률</th>
+            </tr>
+
+            <!-- tr*4>th+td*3 -->
+            <tr>
+                <th id="y2015">2015년</th>
+                <td headers="y2015 site1">1000</td>
+                <td headers="y2015 site2">500</td>
+                <td headers="y2015 pass">50%</td>
+            </tr>
+            <tr>
+                <th id="y2016">2016년</th>
+                <td headers="y2016 site1">2000</td>
+                <td headers="y2016 site2">1600</td>
+                <td headers="y2016 pass">80%</td>
+            </tr>
+            <tr>
+                <th id="y2017">2017년</th>
+                <td headers="y2017 site1">500</td>
+                <td headers="y2017 site2">200</td>
+                <td headers="y2017 pass">40%</td>
+            </tr>
+            <tr>
+                <th id="y2018">2018년</th>
+                <td headers="y2018 site1">1000</td>
+                <td headers="y2018 site2">1000</td>
+                <td headers="y2018 pass">100%</td>
+            </tr>
+
+            <tr>
+                <td>합계</td>
+                <td>4500</td>
+                <td>3300</td>
+                <td>70%</td>
+            </tr>
+
+
+
+        </table>
+        <figcaption>2015년부터 2018년까지의 웹접근성 신청사이트수와 인증사이트를 보여준다</figcaption>
+    </figure>
+
+    <table>
+        <caption></caption>
+        <tr>
+            <th rowspan="2" id="category">구분</th>
+            <th colspan="3" id="discount">정규/할인</th>
+            <!-- <th></th> -->
+            <th colspan="3" id="promption">특가운임(프로모션 특가운임한정)</th>
+            <!-- <th></th> -->
+        </tr>
+        <tr>
+            <th id="adultbaby">성인/소아</th>
+            <th>유아</th>
+            <th colspan="2">성인/소아</td>
+            <th colspan="2">유아</td>
+                <!-- <td></td> -->
+        </tr>
+        <tr>
+            <th>미주노선제외</th>
+            <td>무게15kg</th>
+            <td>무게:10kg 허용 개수:1개</td>
+            <td colspan="2">수하물없음</td>
+            <td>&nbsp;</td>
+
+
+        </tr>
+        <tr>
+            <th>미주노선</th>
+            <td>무게:23kg</th>
+            <td></td>
+            <td colspan="2">정규할임 운임과 동일</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <!-- <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> -->
+        </tr>
+    </table>
+</body>
+
+</html>

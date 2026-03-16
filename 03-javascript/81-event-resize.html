@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (
+        ) {
+            window.addEventListener("resize", function () {
+                console.log("사용가능영역:", window.innerWidth);
+                console.log("윈도우 너비:", window.outerWidth);
+                console.log("사용가능영역 높이", window.innerHeight);
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>resize event</h1>
+
+</body>
+
+</html>

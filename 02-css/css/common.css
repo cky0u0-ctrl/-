@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+img,
+video {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+.blind {
+    position: absolute;
+    top: -9999px;
+    /*디스플레이눈- 화면에서 사라짐 (리더기가 못읽음) */
+}
+
+body {
+    font-family: "Noto Sans Kr", sans-serif;
+    font-size: 16px;
+    color: #111;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .over,
+        .enter {
+            background: #eee;
+            margin: 50px;
+            padding: 30px;
+
+            p {
+                background: green;
+                padding: 10px;
+            }
+
+
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let over = document.querySelector(".over");
+            let overChild = document.querySelector(".over>p");
+            over.addEventListener("mouseover", (e) => {
+                console.log("여기는 오버영역!!!!")
+            })
+            overChild.addEventListener("mouseover", (e) => {
+                //  이벤트 부모에 전달됨, 이를 이벤트 더블링- 차이점 중요
+                // 더블링 막아주기 - 리액트에서 중요 부모에게 자식요소 전달에게 안되게할때
+                e.stopPropagation();
+                console.log("여기는 오버의 자식영역~~~~")
+            })
+
+
+
+            let enter = document.querySelector(".enter");
+            let enterChild = document.querySelector(".enter>p");
+
+            enter.addEventListener("mouseenter", (e) => {
+                console.log("enter 영역 부모@@@@")
+            })
+            enterChild.addEventListener("mouseenter", (e) => {
+                console.log("여기는 enter의 자식영역!!!")
+            })
+
+
+        })
+
+
+    </script>
+</head>
+
+<body>
+    <div class="over">
+        <p>over</p>
+    </div>
+
+    <div class="enter">
+        <p>enter</p>
+    </div>
+</body>
+
+</html>

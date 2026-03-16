@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #999;
+        }
+    </style>
+    <script>
+        // 오늘의 날짜 정보를 저장할 변수
+        let today = new Date();
+
+        // 년도
+        let year = today.getFullYear();
+
+
+        // 월 1월-0 , 2월-1, 11월-10 , 12월-11
+        let month = today.getMonth()
+
+        // 각달의 마지막을 저장할 배열만들기
+        let lastDate = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+        // 이번달의 1일
+        let thisDay = new Date(year, month, 1);
+        // 이번달의 1일 무슨 요일
+        let thisweek = thisDay.getDay();
+        console.log(thisweek);
+
+        // 달력줄 수 계산
+        // 4줄 1일 (6+28)/7 =>4
+        // 5줄 1일  /7 => 5
+
+        // 6줄(1일의 요일수+마지막날짜 /7
+        let row = Math.ceil((thisweek + lastDate[month]) / 7);
+        console.log(row);
+        // 달력 안에 들어가는 숫자
+        let num = 1;
+        let week = ["일", "월", "화", "수", "목", "금", "토"]
+
+
+        // 달력을 저장할 변수
+
+        let cal = "<table>";
+        cal += "<tr>";
+        // cal += "<th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>"
+        for (i = 0; i < 7; i++) {
+            cal += `<th>${week[i]}</th>`
+        }
+
+        cal += "</tr>";
+
+        // 줄
+
+        for (let i = 0; i < row; i++) {
+            cal += "<tr>"
+            // 칸
+            for (let j = 0; j < 7; j++) {
+                // 첫번째줄이면서 , 이번달 1일의 요일번째보다 작은면 빈칸
+                if (i == 0 && thisweek > j || num > lastDate[month]) {
+                    cal += `<td></td>`
+                }
+                else {
+
+                    cal += `<td>${num++}</td>`
+                }
+            }
+            cal += "</tr>"
+        }
+
+
+
+        cal += "</table>"
+        document.write(cal)
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

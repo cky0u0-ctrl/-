@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("A");
+        setTimeout(() => { console.log("b") }, 500)
+        setTimeout(() => {
+            console.log("c")
+        }, 0)
+        console.log("d")
+        // 실행순서 A=> D => B=>C
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

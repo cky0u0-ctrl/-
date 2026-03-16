@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    background: url(../images/animation-81-css-mega.jpg);
+
+}
+
+.mouse-wrap {
+    position: absolute;
+    /* background: sandybrown; */
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: mouseAni 1s infinite alternate linear;
+    /* 리니어는 똑같은속도로 올라갔다 내려갔다 */
+}
+
+
+.mouse {
+    width: 25px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouse span {
+    display: block;
+    width: 4px;
+    height: 8px;
+    border-radius: 6px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    animation: iconAni 1s linear infinite;
+
+}
+
+@keyframes mouseAni {
+    0% {
+        bottom: 100px;
+        opacity: 1;
+    }
+
+    50% {
+        bottom: 75px;
+        opacity: 0.2;
+        /* 0~1사이로만 불투명도 조절(소수점포함) */
+    }
+
+    100% {
+        bottom: 100px;
+    }
+
+}
+
+@keyframes iconAni {
+    0% {
+        top: 10px;
+
+    }
+
+    50% {
+        top: 20px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 40px;
+        opacity: 0;
+    }
+}

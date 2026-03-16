@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 
+        let numbers = [10, 5, 8, 20];
+        // 10초과를 찾아서 값
+        let num1 = numbers.find(n => n >= 10)
+        document.write(num1 + "<br>");
+
+        // 10이상를 찾아서 있는지 체크
+        let num2 = numbers.some(n => n >= 10);
+        document.write(num2)
+    </script>
+
+</head>
+
+<body>
+    <h1>find</h1>
+    <p>조건에 맞는 첫번째 요소 찾기 - 값 </p>
+    <h1>some</h1>
+    <p>
+        조건에 맞는 요소가 있는지 찾기 true/false
+    </p>
+
+
+</body>
+
+</html>

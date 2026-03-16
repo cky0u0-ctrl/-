@@ -1,0 +1,45 @@
+/* 공통사항 */
+/* 1.전체 여백 제거 */
+* {
+    margin: 0;
+    /* 바깥여백 */
+    padding: 0;
+    /* 안쪽여백 - 대표ul */
+}
+
+/* 2.li의 장식제거 */
+li {
+    list-style: none;
+}
+
+/* 3.a의 밑줄제거, 글자색 */
+a {
+    text-decoration: none;
+    color: inherit;
+    /* 부모색상 각자 상속받아쓰라는 명령.. */
+
+}
+
+/* 4.img, video 글자와 입력줄이 달라서
+위아래 여백이 생김 . 정렬해주기 */
+img,
+video {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+/* 5.address, i, em 기울기 펴주세요  . 컴마로 속성 나열*/
+address,
+i,
+em {
+    font-style: normal;
+}
+
+/* 6.blind -  처리하기  */
+
+/* 7.body, 글자크기 ,글자색, 글씨체, 자간, 줄간 */
+body {
+    font-family: "proxima-nova", "pretendard", sans-serif;
+    color: #1b1d1c;
+    /* 글씨크기 안주면 16임 */
+}

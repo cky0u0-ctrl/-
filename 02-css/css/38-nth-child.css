@@ -1,0 +1,29 @@
+/* list의 첫번쨰 자식인 li 글자크기 30px , 대문자 */
+.list>li:first-child {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* .list의 마지막 자식 굵게(700), 밑줄 */
+.list>li:last-child {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* .list 자식중 2번째 자식 기울기 */
+.list>li:nth-child(2) {
+    font-style: italic;
+}
+
+/* 곱하기 배수 개념으로 적용해도됨 */
+/* 짝수번째 배경을 핑크 */
+.list>li:nth-child(2n) {
+    background: wheat;
+
+}
+
+
+/* 홀수번째 배경을 skyblue*/
+.list>li:nth-child(2n+1) {
+    background: pink;
+}

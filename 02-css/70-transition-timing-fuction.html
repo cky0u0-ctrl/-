@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 400px;
+            border: 5px solid;
+        }
+
+        .wrap>div {
+            width: 5px;
+            height: 50px;
+            background: salmon;
+            margin: 10px;
+            /* 공통사항에 변화주기! */
+            transition-duration: 6s;
+        }
+
+        .wrap:hover div {
+            width: calc(100% - 20px);
+        }
+
+        .wrap>.box1 {}
+
+        .wrap>.box2 {
+            transition-timing-function: linear;
+            /* 애니메이션 효과 균일화 - 종류5개*/
+        }
+
+        .wrap>.box3 {
+            transition-timing-function: ease-out;
+        }
+
+        .wrap>.box4 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .wrap>.box5 {
+            transition-timing-function: steps(5);
+        }
+
+        .wrap>.box6 {
+            transition-timing-function: cubic-bezier(.72, .96, .86, -0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transitio timing fution</h1>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 오늘의 날짜 정보를 저장할 변수
+        let today = new Date();
+        console.log(today);
+
+        // 요일을 저장할 배열만들기
+        let week = ["일", "월", "화", "수", "목", "금", "토"]
+        console.log(week);
+        console.log(week[3]);
+        // 요일 정보 받아오기
+        let theDay = today.getDay();
+        console.log(theDay);
+        document.write(`오늘은 ${week[theDay]}요일입니다~`)
+
+    </script>
+
+</head>
+
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.숫자를 저장할 배열
+        let numbers = [1, 2, 3, 4, 5, 6];
+        // 짝수만 찾아서 새로운 배열 만들기
+        //  새로운배열명 = 배열명.filter((데이터저장변수,순서,배열)=>조건문)
+
+        let even = numbers.filter((num => num % 2 == 0));
+        document.write(even + "<br>");
+        // 4보다 큰값만 찾아서 새로운 배열 만들기
+        let count = numbers.filter(num => num > 4);
+        document.write(count + "<br>");
+
+        // 2.문자를 저장할 배열
+        let fruits = ["apple", "banana", "cherry", "peach", "strawberry"];
+        //  문자의 길이가 6글자 이상만 찾아서 새로운 배열만들기
+
+        let result = fruits.filter(f => f.length >= 6);
+        document.write(result + "<br>");
+
+        // 3.
+        const users = [
+            { name: "홍길동", age: 20, 성별: "남자" },
+            { name: "김철수", age: 50, 성별: "남자" },
+            { name: "이영희", age: 70, 성별: "남자" },
+            { name: "흰둥이", age: 5, 성별: "여자" },
+            { name: "이나영", age: 25, 성별: "여자" },
+        ]
+
+        // users 배열에 데이터중 나이가 30이하면 출력 새로운 배열만들기
+
+        let youngs = users.filter(u => u.age <= 30);
+        // 객체 또는 배열의 데이터를 문자로 변환시키기
+        // JSON.stringify(객체)
+
+        // document.write(youngs)
+        document.write(JSON.stringify(youngs))
+        console.log(youngs);
+
+        //성별이 남자만 추출
+        let man = users.filter(m => m.성별 == "남자")
+        man.forEach(m => {
+            document.write(`${m.name} ${m.age}<br>`)
+        })
+    </script>
+</head>
+
+<body>
+    <h1>filter</h1>
+    <p>배열 요소에서 조건에 맞는 요소를 찾아서 새로운 배열을 만들때</p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td {
+            border: 1px solid #744e4e;
+        }
+
+        table {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        // 5줄 7칸 테이블 만들기
+        // 각셀에는 숫자 1~
+        // 달력안에 들어갈 숫자를 체크할 변수
+        let num = 1;
+        // 테이블을 저장할 변수
+
+        let myTable = "<table>";
+
+
+        // 줄을 체크해줄 for;
+        for (i = 1; i <= 5; i++) {
+            myTable += "<tr>";
+            // 칸을 체크해줄 for
+            for (j = 1; j <= 7; j++) {
+                myTable += `<td>${num++}</td>`
+            }
+            myTable += "</tr>"
+        }
+
+
+        myTable += "</table>";
+
+        document.write(myTable);
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

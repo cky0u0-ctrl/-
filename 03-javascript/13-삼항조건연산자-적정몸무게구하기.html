@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 키와 몸무게를 입력받아서 적정몸무게 구하기
+        let height = +prompt('당신의 키를 입력하세요', '');
+        let weight = +prompt('당신의 몸무게를 입력하세요', '');
+
+        //적정몸무게(키-100)*0.9 오차범위 +-5
+        let sWeight = (height - 100) * 0.9;
+        // (160-100)*0.9 54 49~59 / 60
+
+        // 구한값 -5 <=내몸무게 <= 구한값+5
+        sWeight - 5 <= weight && weight <= sWeight + 5 ? document.write('표준') : document.write('운동이 필요합니다');
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>dls

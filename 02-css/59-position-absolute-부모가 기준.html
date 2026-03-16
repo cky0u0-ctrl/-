@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 600px;
+            background: blanchedalmond;
+            position: relative;
+            /* 부모기준부여 명령어 */
+        }
+
+        .wrap>div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+
+        }
+
+        .box1 {
+            background: orange;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* 첫 부모 찾아서 기준찾음 - 없으면 바디 */
+        }
+
+        .box2 {
+            background: darkkhaki;
+            position: absolute;
+            left: 70px;
+
+        }
+
+        /* 부모 공간적어지면 아래요소도 올라옴 - 부모요소 고정못함(명령x) - 자식들올라가서 */
+        /* 겹친 홈페이지요소 거의 이거사용 */
+        .box3 {
+            background: hotpink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>position</h1>
+    <p>요소들의 위치를 설명할때 사용, 겹칠 수 있다</p>
+
+    <h2>position:absolute</h2>
+    <p>부모가 기준 ☆매우자주사용 중요</p>
+
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+
+
+
+
+    <p>
+        wrap 아래쪽 영역
+    </p>
+</body>
+
+</html>

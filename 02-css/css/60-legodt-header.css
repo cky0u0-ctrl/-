@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: middle;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: rgba(255, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.header-right {
+    display: flex;
+    gap: 50px;
+}
+
+.header-right>ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* 아래부터 하단메뉴숨기는방법... */
+.gnb-list>li {
+    position: relative;
+}
+
+.gnb-list>li:hover .depth2 {
+    display: block;
+}
+
+
+.header-right .depth2 {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    left: 50%;
+    top: 40PX;
+    transform: translateaX(-50%);
+    border: 1px solid #eee;
+    display: none;
+}
+
+.gnb-list2>li {}
+
+.gnb-list2>li>a {
+    display: block;
+    border: 1px solid;
+    position: relative;
+}
+
+.gnb-list2>li>a span {
+    position: absolute;
+    background: hotpink;
+    color: #fff;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+}
+
+main {
+    background-color: #555;
+    height: 400px;
+}

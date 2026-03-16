@@ -1,0 +1,44 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 공통 너비,높이,글자크기,두께 */
+
+.quick-list>div>a {
+    display: block;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.quick-list>.store>a {
+    background: #ffce32 url(../images/SB-icon_map.png) no-repeat 80px center;
+    text-indent: 120px;
+    border-radius: 30px 0 0 0;
+    /* border-top-left-radius: 30px; */
+    /* border-start-start-radius: 30px;
+ */
+
+
+}
+
+.quick-list>.franchise>a {
+    ;
+    background: #009223 url(../images/SB-icon_franchise.png) no-repeat 60px center;
+    text-indent: 90px;
+    color: #fff;
+    border-radius: 0 0 30px 0;
+    /* 앵커는 앵커에다가만 적용해야함 */
+}
+
+.title {
+    background: url(../images/SB-imgi_32_bul_tit.png) no-repeat;
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 25px;
+
+}

@@ -1,0 +1,19 @@
+header .logo {
+  text-align: center;
+}
+@media myScreen and (max-width: 767px) {
+  header .logo {
+    text-align: right;
+  }
+}
+
+.container {
+  width: 1200px;
+  background: skyblue;
+  margin: 0 auto;
+}
+@media myScreen and (max-width: 767px) {
+  .container {
+    width: 80%;
+  }
+}

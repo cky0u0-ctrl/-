@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="wrap">
+        내용
+        <span>여기는 innerText 별도 접근???</span>
+    </div>
+
+
+    <pre>
+innerText : 태그를 제외한 내용
+innerHTML : 태그를 포함한 내용
+textContent : 엔터, space 포함한 내용물
+
+
+</pre>
+
+    <script>
+        let wrap = document.querySelector(".wrap");
+        // innerText
+        console.log(wrap.innerText);
+        // innerHTML
+        console.log(wrap.innerHTML);
+        // textContent
+        console.log(wrap.textContent);
+
+    </script>
+
+</body>
+
+</html>
