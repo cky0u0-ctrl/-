@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-form</title>
+    <script defer src="./js/76-from-event.js"></script>
+</head>
+
+<body>
+    <form action="myForm" id="myForm">
+        <p><input type="text" id="uId"><span class="num">0</span></p>
+        <p class="check">
+            <label>html<input type="checkbox" name="html" class="html"></label>
+            <label>css<input type="checkbox" name="css" class="css"></label>
+            <label>javascript<input type="checkbox" name="javascript" class="javascript"></label>
+        </p>
+        <p>
+            <select name="likeColor" id="likeColor">
+                <option value="핑크">pink</option>
+                <option value="스카이블루">skyblue</option>
+                <option value="초록">green</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </p>
+    </form>
+</body>
+
+</html>
